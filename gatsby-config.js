@@ -56,7 +56,7 @@ module.exports = {
           patterns: '**/*.{js,jsx,ts,tsx}',
           customOptions: {
             fix: true,
-            cache: true,
+            // cache: true,
           },
         },
       },
