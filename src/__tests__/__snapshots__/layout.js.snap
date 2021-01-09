@@ -2,6 +2,7 @@
 
 exports[`Layout renders correctly 1`] = `
 <div
+  className="layout"
   id="layout"
 />
 `;
