@@ -1,69 +1,41 @@
 .hero {
-  @apply relative flex flex-col items-center justify-center font-sans text-nuetral-white text-center h-auto max-h-full max-w-full;
+  @apply relative flex flex-col items-center justify-center font-sans text-nuetral-white text-center h-auto max-h-full max-w-full z-1 p-4 mb-4;
 
   background-position: center;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%, 0% 25%);
-  margin-bottom: 1em;
   min-height: 60vh;
-  padding: 1em 1rem;
-  z-index: 2;
 
   @media screen and (min-width: 48em) {
-    padding: 1em 1.5rem;
+    @apply py-4 px-6;
   }
 
   &::before {
-    @apply absolute z-behind inset-0;
+    @apply absolute z-behind inset-0 bg-primary-purple1 bg-opacity-80;
 
-    background-color: rgb(2, 0, 65);
     content: '';
-    opacity: 0.8;
   }
 
   & .title {
-    font-weight: 600;
-    font-size: 2.2em;
-    margin-bottom: 0;
-    width: 100%;
-
-    @media screen and (min-width: 48em) {
-      font-size: 3.6em;
-    }
-    @media screen and (min-width: 60em) {
-      font-size: 4em;
-      line-height: 1.4em;
-    }
+    @apply text-5xl md:text-6xl lg:text-7xl font-semibold;
   }
 
   & hr {
-    @apply bg-tertiary-teal;
+    @apply bg-tertiary-teal border-none my-5 mx-auto w-full rounded;
 
-    border: 0;
-    margin: 1.2em auto;
-    height: 3px;
-    border-radius: 20px;
-    max-width: 140px;
-    width: 100%;
+    height: 0.1875rem;
+    max-width: 8.75rem;
   }
 
   & .content {
-    font-size: 1.4em;
-    font-weight: 800;
+    @apply text-lg lg:text-xl font-semibold;
   }
 
   & .inner-wrap {
-    @apply bg-primary-purple2 z-1;
+    @apply relative bg-primary-purple2 z-1 my-0 mx-auto text-left w-full py-12 px-5 max-w-2xl;
 
-    margin: 0 auto;
-    max-width: 40em;
-    padding: 3em 1.2em;
-    position: relative;
-    text-align: left;
-    width: 100%;
-
-    @media screen and (min-width: 60em) {
-      padding: 2em;
+    @screen lg {
+      @apply p-8;
     }
   }
 }
