@@ -6,7 +6,7 @@ export default function Hero({title, content, img}) {
   return (
     <section className={styles.hero}>
       <div>
-        { title && <h1 classNam={styles.title}>{ title }</h1>}
+        { title && <h1 className={styles.title}>{ title }</h1>}
         { content &&
           <>
             <hr />
