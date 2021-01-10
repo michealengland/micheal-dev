@@ -40,6 +40,12 @@ module.exports = {
         'semi': [
             'error',
             'never'
+        ],
+        'object-curly-spacing': [
+          'error', 'never'
+        ],
+        'space-in-parens': [
+          'error', 'never'
         ]
     }
 }
