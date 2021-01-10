@@ -6,9 +6,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <Hero
-        title={ 'I\'m Mike England' }
-        content={ 'Frontend Engineer / Designer / Motorcycle Enthusiast' }
-        img={ './images/wcus2018-hall-track-1.jpg' }
+        title={'I\'m Mike England'}
+        content={'Frontend Engineer / Designer / Motorcycle Enthusiast'}
+        img={'./images/wcus2018-hall-track-1.jpg'}
       />
     </Layout>
   )
