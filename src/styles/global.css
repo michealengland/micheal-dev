@@ -1,0 +1,12 @@
+@tailwind base; /* Preflight will be injected here */
+
+@tailwind components;
+
+@tailwind utilities;
+
+html,
+body {
+  body {
+    @apply bg-primary-purple2;
+  }
+}
