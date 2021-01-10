@@ -50,6 +50,11 @@ module.exports = {
           white: '#fff',
           dark: '#333',
         }
+      },
+      zIndex: {
+        'behind': -1,
+        '0': 0,
+        '1': 1,
       }
     }
   },
