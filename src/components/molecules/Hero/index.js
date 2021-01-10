@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import styles from './Hero.module.css'
 
-export default function Hero({title, content, linkText, linkTo, img}) {
+export default function Hero({title, content, img}) {
   return (
-    <section>
+    <section className={styles.hero}>
       <div>
-        { title && <h1>{ title }</h1>}
+        { title && <h1 classNam={styles.title}>{ title }</h1>}
         { content &&
           <>
             <hr />
-            <p>{ content }</p>
+            <p className={styles.content}>{ content }</p>
           </>
         }
-        {/* <LinkButton to={ linkTo }>{linkText}</LinkButton> */}
       </div>
     </section>
   )
