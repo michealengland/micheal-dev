@@ -2,12 +2,13 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import createMarkup from '@utilities/createMarkup'
 import Heading from '@components/atoms/Heading'
+import styles from './Content.module.css'
 
 export default function Content({content, title, titleTag}) {
   return (
-    <section>
-      {title && <Heading tag={titleTag}>{title}</Heading>}
-      {content && <div dangerouslySetInnerHTML={ createMarkup(content) } />}
+    <section className={styles.content}>
+      {title && <Heading className={styles.contentHeading} tag={titleTag}>{title}</Heading>}
+      {content && <div dangerouslySetInnerHTML={ createMarkup(content) } className={styles.text} />}
     </section>
   )
 }
