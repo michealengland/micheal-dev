@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders correctly 1`] = `
+<section
+  className="hero"
+  style={
+    Object {
+      "backgroundImage": "url(./images/wcus2018-hall-track-1.jpg)",
+    }
+  }
+>
+  <div>
+    <h1
+      className="title"
+    >
+      Hero title.
+    </h1>
+    <p
+      className="content"
+    >
+      Hero subtitle.
+    </p>
+  </div>
+</section>
+`;

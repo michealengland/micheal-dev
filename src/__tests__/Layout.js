@@ -4,7 +4,7 @@ import Layout from '../components/molecules/Layout'
 describe('Layout', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Layout />)
+      .create(<Layout><h1>Some content...</h1></Layout>)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })

@@ -1,3 +1,12 @@
+/**
+ * Tailwind configuration overrides.
+ *
+ * Note: Some areas may not require override and rely on Tailwind defaults.
+ *
+ * @see screen   defaults {@link https://tailwindcss.com/docs/breakpoints}
+ * @see spacing  defaults {@link https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale}
+ * @see fontSize defaults {@link https://tailwindcss.com/docs/font-size}
+ */
 module.exports = {
   purge: {
     content: [
@@ -19,21 +28,6 @@ module.exports = {
         sans: ['Muli, sans-serif'],
         mono: ['Menlo, monospace'],
       },
-      fontSize: {
-        'root-em': '16px',
-        xsmall: '.75rem',
-        small: '1rem',
-        regular: '1.2rem',
-        large: '1.8rem',
-      },
-      spacing: {
-        px: '1px',
-        0: '0',
-        4: '0.25rem',
-        8: '0.5rem',
-        16: '1rem',
-        32: '2rem',
-      },
       colors: {
         primary: {
           purple: '#639',
@@ -50,6 +44,11 @@ module.exports = {
           white: '#fff',
           dark: '#333',
         }
+      },
+      zIndex: {
+        'behind': -1,
+        '0': 0,
+        '1': 1,
       }
     }
   },
