@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import createMarkup from '@utilities/createMarkup'
-// import Heading from '@components/atoms/Heading'
 import Heading from '@components/atoms/Heading'
 
 export default function Content({content, title, titleTag}) {
@@ -19,6 +18,6 @@ Content.propTypes = {
   titleTag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
 }
 
-// Content.defaultProps = {
-//   titleTag: 'h2'
-// }
+Content.defaultProps = {
+  titleTag: 'h2'
+}
