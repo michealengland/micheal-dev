@@ -4,5 +4,9 @@ exports[`Layout renders correctly 1`] = `
 <div
   className="layout"
   id="layout"
-/>
+>
+  <h1>
+    Some content...
+  </h1>
+</div>
 `;
