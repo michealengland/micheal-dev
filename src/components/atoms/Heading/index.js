@@ -1,4 +1,4 @@
-import createMarkup from '@/functions/createMarkup'
+import createMarkup from '@/utils/createMarkup'
 import PropTypes from 'prop-types'
 import React from 'react'
 
