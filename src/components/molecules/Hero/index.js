@@ -8,13 +8,8 @@ export default function Hero({title, content, img}) {
   return (
     <section className={styles.hero} style={backgroundImage}>
       <div>
-        { title && <h1 className={styles.title}>{ title }</h1>}
-        { content &&
-          <>
-            <hr />
-            <p className={styles.content}>{ content }</p>
-          </>
-        }
+        {title && <h1 className={styles.title}>{ title }</h1>}
+        {content && <p className={styles.content}>{ content }</p>}
       </div>
     </section>
   )
