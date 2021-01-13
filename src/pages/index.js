@@ -3,6 +3,7 @@ import Layout from '@components/molecules/Layout'
 import Hero from '@components/molecules/Hero'
 import Content from '@components/molecules/Content'
 import MediaContent from '@components/molecules/MediaContent'
+import ContentCTA from '@components/molecules/ContentCTA'
 
 const IndexPage = () => {
   return (
@@ -38,14 +39,20 @@ const IndexPage = () => {
         // backgroundColor={ '#ebeef3' }
         img="./images/tomasz-zagorski-1097343-unsplash.jpg"
         title="Design Skills"
-        content={'<p>Like many front-enders I started out as a designer creating everything from branding projects to website concepts.</p>'}
+        content="<p>Like many front-enders I started out as a designer creating everything from branding projects to website concepts.</p>"
       />
       <MediaContent
         // backgroundColor={ '#f9f7fb' }
         imgClipRight={ true }
         img="./images/anete-lusina-382329-unsplash.jpg"
         title="100 Days of Code"
-        content={'<p>Outside of work, I\'m participating in the #100DaysOfCode challenge. During this time I\'ve been working leveling up my JavaScript skills, building out WordPress plugins, and recreating my site with Gatsby.</p>'}
+        content="<p>Outside of work, I'm participating in the #100DaysOfCode challenge. During this time I've been working leveling up my JavaScript skills, building out WordPress plugins, and recreating my site with Gatsby.</p>"
+      />
+      <ContentCTA
+        title="Find me on CodePen"
+        content="Fun fact, I'm a huge fan of CodePen and love using it to create quick concepts."
+        linkTo="https://codepen.io/mengland/pens/"
+        linkText="View CodePen"
       />
     </Layout>
   )
