@@ -1,0 +1,117 @@
+.mediaContent {
+  align-items: center;
+  color: #020041;
+  ul {
+    line-height: 1.8em;
+    list-style: inside;
+    margin: 0;
+    li {
+      margin-bottom: 0.2em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 48em) {
+    display: grid;
+    grid-template-areas: 'media-text-content media-text-media';
+    grid-template-columns: auto 50%;
+  }
+
+  & .content {
+    grid-area: media-text-content;
+    padding: 2em;
+    word-break: break-word;
+    @media screen and (min-width: 48em) {
+      padding: 2em 2em 2em 4rem;
+    }
+    @media screen and (min-width: 80em) {
+      padding: 2em 2em 2em 10rem;
+    }
+  }
+
+  & .media {
+    background-color: #333;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    display: block;
+    grid-area: media-text-media;
+    height: 100%;
+    margin: 0;
+    transition: 500ms ease-in-out;
+    @media screen and (min-width: 48em) {
+      &.clip-left {
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
+      &.clip-right {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+      }
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      margin: 0;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+/* const ContentMediaWrapper = styled.section`
+	align-items: center;
+	color: #020041;
+	ul {
+		line-height: 1.8em;
+		list-style: inside;
+		margin: 0;
+		li {
+			margin-bottom: .2em;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	@media screen and (min-width: 48em) {
+		display: grid;
+		grid-template-areas: "media-text-content media-text-media";
+		grid-template-columns: auto 50%;
+	}
+`
+const InnerContent= styled.div`
+	grid-area: media-text-content;
+	padding: 2em;
+	word-break: break-word;
+	@media screen and (min-width: 48em) {
+		padding: 2em 2em 2em 4rem;
+	}
+	@media screen and (min-width: 80em) {
+		padding: 2em 2em 2em 10rem;
+	}
+`
+
+const InnerMedia = styled.figure`
+	background-color: #333;
+	clip-path: polygon(0 0,100% 0%,100% 100%,0 100%);
+	display: block;
+	grid-area: media-text-media;
+	height: 100%;
+	margin: 0;
+	transition: 500ms ease-in-out;
+	@media screen and (min-width: 48em) {
+		&.clip-left {
+			clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+		}
+		&.clip-right {
+			clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+		}
+	}
+
+	img {
+		display: block;
+		height: 100%;
+		margin: 0;
+		object-fit: cover;
+		width: 100%;
+	}
+` */
