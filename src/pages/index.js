@@ -19,7 +19,7 @@ const IndexPage = () => {
       />
       <MediaContent
         // backgroundColor={ `#f2e6f0` }
-        // imgClip={ true }
+        imgClipRight={ true }
         img="/images/farzad-nazifi-71686-unsplash.jpg"
         title="Code Skills"
         content={`
@@ -33,6 +33,19 @@ const IndexPage = () => {
           <li>Jest (WIP)</li>
         </ul>
         `}
+      />
+      <MediaContent
+        // backgroundColor={ '#ebeef3' }
+        img="./images/tomasz-zagorski-1097343-unsplash.jpg"
+        title="Design Skills"
+        content={'<p>Like many front-enders I started out as a designer creating everything from branding projects to website concepts.</p>'}
+      />
+      <MediaContent
+        // backgroundColor={ '#f9f7fb' }
+        imgClipRight={ true }
+        img="./images/anete-lusina-382329-unsplash.jpg"
+        title="100 Days of Code"
+        content={'<p>Outside of work, I\'m participating in the #100DaysOfCode challenge. During this time I\'ve been working leveling up my JavaScript skills, building out WordPress plugins, and recreating my site with Gatsby.</p>'}
       />
     </Layout>
   )
