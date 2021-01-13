@@ -36,5 +36,6 @@ MediaContent.propTypes = {
 
 MediaContent.defaultProps = {
   imgAlt: '',
+  imgClipRight: false,
   titleTag: 'h2'
 }
