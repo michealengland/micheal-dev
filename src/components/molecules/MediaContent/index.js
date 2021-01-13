@@ -12,7 +12,7 @@ export default function MediaContent({content, img, imgAlt, imgClipRight, title,
     <section className={styles.mediaContent}>
       {(title || content) &&
         <div className={styles.content}>
-          {title && <Heading tag={titleTag}>{title}</Heading>}
+          {title && <Heading className={styles.title} tag={titleTag}>{title}</Heading>}
           {content && <div dangerouslySetInnerHTML={ createMarkup(content) } />}
         </div>
       }
