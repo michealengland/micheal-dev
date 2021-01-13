@@ -8,7 +8,7 @@ export default function ContentCTA({content, title, titleTag}) {
   return (
     <section className={styles.cta}>
       <div className={styles.inner}>
-        {title && <Heading tag={titleTag}>{title}</Heading>}
+        {title && <Heading className={styles.title} tag={titleTag}>{title}</Heading>}
         {content &&
           <>
             <hr />
