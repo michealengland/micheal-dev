@@ -1,73 +1,43 @@
 .cta {
-  align-items: center;
+  @apply relative flex flex-col justify-items-center text-center text-nuetral-white items-center m-0 mx-auto p-5 md:py-16 lg:py-40;
+
   background-size: cover;
   box-sizing: border-box;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
   min-height: 430px;
-  padding: 1.2em;
-  position: relative;
-  text-align: center;
-
-  @media screen and (min-width: 48em) {
-    padding: 1.2em 4rem;
-  }
-
-  @media screen and (min-width: 80em) {
-    padding: 1.2em 10rem;
-  }
 
   &::before {
-    background-color: rgba(2, 0, 65, 0.65);
-    bottom: 0;
+    @apply absolute inset-0 z-1 bg-primary-purple2 bg-opacity-80;
+
     content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
   }
 
-  hr {
-    border: none;
-    margin: 1.2em 0;
-    height: 3px;
-    background: #74edf1;
-    border-radius: 20px;
-    max-width: 140px;
-    width: 100%;
-  }
+  & hr {
+    @apply border-0 my-5 mx-0 bg-tertiary-teal rounded-full w-full;
 
-  p {
-    font-size: 1em;
-    line-height: 1.6em;
-    margin: 0 0 0.5em 0;
-    padding: 0 0 1.2em 0;
+    height: 0.1875rem;
+    max-width: 8.75rem;
   }
 
   & .inner {
-    background-color: #170387;
-    margin: 0 auto;
-    max-width: 40em;
-    padding: 3em 1.2em;
-    position: relative;
-    text-align: left;
-    width: 100%;
-    z-index: 1;
+    @apply relative bg-primary-purple2 text-left m-0 mx-auto max-w-2xl py-12 px-5 w-full z-1;
 
-    @media screen and (min-width: 60em) {
-      padding: 2em;
+    @screen lg {
+      @apply px-8;
     }
   }
 
   & .title {
-    @apply p-0;
+    @apply p-0 text-4xl font-semibold;
   }
 
   & .content {
     @apply p-0;
+
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+
+  & .button {
+    @apply mt-4;
   }
 }
