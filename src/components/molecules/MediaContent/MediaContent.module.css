@@ -40,10 +40,10 @@
     margin: 0;
     transition: 500ms ease-in-out;
     @media screen and (min-width: 48em) {
-      &.clip-left {
+      &.clipLeft {
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
       }
-      &.clip-right {
+      &.clipRight {
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
       }
     }
