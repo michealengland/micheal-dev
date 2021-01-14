@@ -17,8 +17,6 @@ export default function Hero({title, content, img}) {
 
 Hero.propTypes = {
   content: PropTypes.string,
-  linkText: PropTypes.string,
-  linkTo: PropTypes.string,
   img: PropTypes.string,
   title: PropTypes.string,
 }
