@@ -4,13 +4,13 @@ import ProptTypes from 'prop-types'
 import styles from './Button.module.css'
 import cn from 'classnames'
 
-const Button = ({className, label, to}) => (
-  <Link className={cn(styles.button, className)} to={to}>
-    {label}
-  </Link>
-)
-
-export default Button
+export default function Button({className, label, to}) {
+  return (
+    <Link className={cn(styles.button, className)} to={to}>
+      {label}
+    </Link>
+  )
+}
 
 Button.propTypes = {
   className: ProptTypes.string,
