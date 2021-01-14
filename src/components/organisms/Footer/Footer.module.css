@@ -1,0 +1,13 @@
+.footer {
+  background-color: #020041;
+  color: #ffffff;
+  position: relative;
+  width: 100%;
+
+  & .inner {
+    /* marginLeft: `auto`,
+    marginRight: `auto`,
+    maxWidth: isBlog( blogPath ) ? rhythm( 30 ) : '',
+    padding: isBlog( blogPath ) ? `2em` : '', */
+  }
+}
