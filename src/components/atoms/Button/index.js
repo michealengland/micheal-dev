@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from '@components/atoms/link'
 import ProptTypes from 'prop-types'
+import styles from './Button.module.css'
 
 const Button = ({label, to}) => (
-  <Link to={to}>
+  <Link className={styles.button} to={to}>
     {label}
   </Link>
 )
