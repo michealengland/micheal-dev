@@ -6,11 +6,13 @@ import Footer from '@components/organisms/Footer'
 
 const Layout = ({children}) => {
   return (
-    <div id="layout" className={styles.layout}>
+    <>
       <Header />
-      {children}
+      <main id="layout" className={styles.layout}>
+        {children}
+      </main>
       <Footer />
-    </div>
+    </>
   )
 }
 
