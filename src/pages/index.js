@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Layout from '@components/molecules/Layout'
+import Layout from '@components/organisms/Layout'
 import Hero from '@components/molecules/Hero'
 import Content from '@components/molecules/Content'
 import MediaContent from '@components/molecules/MediaContent'

@@ -1,10 +1,12 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Layout from '../components/organisms/Layout'
-describe('Layout', () => {
+import Footer from '@components/organisms/Footer'
+describe('Footer', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Layout><h1>Some content...</h1></Layout>)
+      .create(
+        <Footer />
+      )
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
