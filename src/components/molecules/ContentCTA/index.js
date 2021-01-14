@@ -4,8 +4,9 @@ import PropTypes from 'prop-types'
 import styles from './ContentCTA.module.css'
 import createMarkup from '@utilities/createMarkup'
 import cn from 'classnames'
+import Button from '@components/atoms/Button'
 
-export default function ContentCTA({content, img, title, titleTag}) {
+export default function ContentCTA({content, img, label, title, titleTag, url}) {
   const hasImgClass = !! img ? styles.hasImg : ''
   const backgroundImage = img && {backgroundImage: `url(${img})`}
 
@@ -19,6 +20,7 @@ export default function ContentCTA({content, img, title, titleTag}) {
             <div className={styles.content} dangerouslySetInnerHTML={createMarkup(content)} />
           </>
         }
+        {url && <Button label={label} to={url} />}
       </div>
     </section>
   )
