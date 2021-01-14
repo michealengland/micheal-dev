@@ -50,16 +50,16 @@ const IndexPage = () => {
       />
       <ContentCTA
         content="Fun fact, I'm a huge fan of CodePen and love using it to create quick concepts."
-        linkText="View CodePen"
-        linkTo="https://codepen.io/mengland/pens/"
+        label="View CodePen"
         title="Find me on CodePen"
+        url="https://codepen.io/mengland/pens/"
       />
       <ContentCTA
         content="Want to discuss a project? Message me on Twitter."
         img="./images/ash-goldsbrough-1092046-unsplash.jpg"
-        linkText="Message"
-        linkTo="https://twitter.com/mikelikethebike"
+        label="Message"
         title="Let's Connect"
+        url="https://twitter.com/mikelikethebike"
       />
     </Layout>
   )
