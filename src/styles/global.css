@@ -6,7 +6,5 @@
 
 html,
 body {
-  body {
-    @apply bg-primary-purple2;
-  }
+  @apply bg-primary-purple1;
 }
