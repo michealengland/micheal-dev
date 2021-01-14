@@ -28,8 +28,8 @@ export default function ContentCTA({content, img, label, title, titleTag, url}) 
 
 ContentCTA.propTypes = {
   content: PropTypes.string,
-  label: PropTypes.string,
   img: PropTypes.string,
+  label: PropTypes.string,
   title: PropTypes.string,
   titleTag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
   url: PropTypes.string,
