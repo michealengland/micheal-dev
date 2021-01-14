@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="logo"
+  >
+    <a
+      displayType={false}
+      href="/"
+    >
+      <img
+        alt="Micheal.dev logo"
+        src="test-file-stub"
+      />
+    </a>
+  </div>
+  <nav
+    className="menu"
+  >
+    <ul>
+      <li>
+        <a
+          displayType={false}
+          href="/blog"
+        >
+          Blog
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
