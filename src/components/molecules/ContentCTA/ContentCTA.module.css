@@ -32,6 +32,10 @@
     & .content {
       @apply mb-0;
     }
+
+    & .button {
+      @apply mx-0;
+    }
   }
 
   & .inner {
@@ -58,6 +62,6 @@
   }
 
   & .button {
-    @apply mt-4;
+    @apply mt-8 mx-auto;
   }
 }
