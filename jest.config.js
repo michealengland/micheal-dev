@@ -9,6 +9,7 @@ module.exports = {
     '^@components(.*)$': '<rootDir>/src/components$1',
     '^@utilities(.*)$': '<rootDir>/src/utilities$1',
     '^@static(.*)$': '<rootDir>/src/static$1',
+    '^@content(.*)$': '<rootDir>/content$1',
   },
   testPathIgnorePatterns: ['node_modules', '\\.cache', '<rootDir>.*/public'],
   transformIgnorePatterns: ['node_modules/(?!(gatsby)/)'],

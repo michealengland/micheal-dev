@@ -5,6 +5,37 @@ exports[`Layout renders correctly 1`] = `
   className="layout"
   id="layout"
 >
+  <header
+    className="header"
+  >
+    <div
+      className="logo"
+    >
+      <a
+        displayType={false}
+        href="/"
+      >
+        <img
+          alt="Micheal.dev logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <nav
+      className="menu"
+    >
+      <ul>
+        <li>
+          <a
+            displayType={false}
+            href="/blog"
+          >
+            Blog
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <h1>
     Some content...
   </h1>

@@ -1,0 +1,32 @@
+.header {
+  @apply text-nuetral-white bg-primary-purple1 flex items-center p-4;
+
+  & .menu {
+    @apply inline-block;
+
+    ul {
+      @apply m-0 list-none;
+
+      li {
+        @apply m-0;
+      }
+    }
+  }
+
+  & .logo {
+    @apply inline-block text-3xl font-normal mr-auto uppercase;
+
+    letter-spacing: 1px;
+
+    &:hover,
+    &:focus {
+      @apply opacity-70 transition-all;
+    }
+
+    & img {
+      @apply block;
+
+      max-width: 4.25rem;
+    }
+  }
+}
