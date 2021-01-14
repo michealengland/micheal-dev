@@ -7,7 +7,7 @@ import cn from 'classnames'
 export default function Button({className, label, to}) {
   return (
     <Link className={cn(styles.button, className)} to={to}>
-      {label}
+      {label || to}
     </Link>
   )
 }
@@ -15,5 +15,5 @@ export default function Button({className, label, to}) {
 Button.propTypes = {
   className: ProptTypes.string,
   label: ProptTypes.string,
-  to: ProptTypes.string,
+  to: ProptTypes.string.isRequired,
 }
