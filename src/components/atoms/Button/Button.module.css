@@ -45,7 +45,7 @@
 
   &:hover,
   &:focus {
-    @apply bg-primary-purple2 border-secondary-pink text-nuetral-white;
+    @apply border-secondary-pink text-nuetral-white;
 
     border-radius: 5em;
 
