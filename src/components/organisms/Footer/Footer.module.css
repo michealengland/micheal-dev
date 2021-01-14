@@ -1,13 +1,16 @@
 .footer {
-  background-color: #020041;
-  color: #ffffff;
-  position: relative;
-  width: 100%;
+  @apply relative bg-primary-purple1 text-nuetral-white w-full;
 
   & .inner {
-    /* marginLeft: `auto`,
-    marginRight: `auto`,
-    maxWidth: isBlog( blogPath ) ? rhythm( 30 ) : '',
-    padding: isBlog( blogPath ) ? `2em` : '', */
+    @apply mx-auto max-w-2xl p-2 text-center;
+  }
+
+  & a {
+    @apply text-tertiary-teal underline;
+
+    &:hover,
+    &:focus {
+      @apply text-secondary-pink;
+    }
   }
 }
