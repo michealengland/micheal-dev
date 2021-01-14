@@ -1,10 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Layout renders correctly 1`] = `
-<div
-  className="layout"
-  id="layout"
->
+Array [
   <header
     className="header"
   >
@@ -35,9 +32,32 @@ exports[`Layout renders correctly 1`] = `
         </li>
       </ul>
     </nav>
-  </header>
-  <h1>
-    Some content...
-  </h1>
-</div>
+  </header>,
+  <main
+    className="layout"
+    id="layout"
+  >
+    <h1>
+      Some content...
+    </h1>
+  </main>,
+  <footer
+    className="footer"
+  >
+    <div
+      className="inner"
+    >
+      <p>
+        © 
+        2021
+         Mike England, Built with 
+        <a
+          href="https://www.gatsbyjs.org"
+        >
+          Gatsby
+        </a>
+      </p>
+    </div>
+  </footer>,
+]
 `;
