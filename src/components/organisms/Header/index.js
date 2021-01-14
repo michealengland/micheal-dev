@@ -5,12 +5,12 @@ import styles from './Header.module.css'
 
 export default function Header() {
   return <header className={styles.header}>
-    <h1 className={styles.logo}>
+    <div className={styles.logo}>
       <Link to={ '/' }>
         <img src={ Logo } alt="Micheal.dev logo" />
       </Link>
-    </h1>
-    <nav>
+    </div>
+    <nav className={styles.menu}>
       <ul>
         <li>
           <Link to={ '/blog' }>Blog</Link>
