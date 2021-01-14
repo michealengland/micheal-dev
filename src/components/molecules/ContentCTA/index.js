@@ -20,7 +20,7 @@ export default function ContentCTA({content, img, label, title, titleTag, url}) 
             <div className={styles.content} dangerouslySetInnerHTML={createMarkup(content)} />
           </>
         }
-        {url && <Button label={label} to={url} />}
+        {url && <Button className={styles.button} label={label} to={url} />}
       </div>
     </section>
   )
