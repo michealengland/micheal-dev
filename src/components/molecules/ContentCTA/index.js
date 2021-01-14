@@ -15,7 +15,7 @@ export default function ContentCTA({content, img, title, titleTag}) {
         {title && <Heading className={styles.title} tag={titleTag}>{title}</Heading>}
         {content &&
           <>
-            <hr />
+            {!!img && <hr />}
             <div className={styles.content} dangerouslySetInnerHTML={createMarkup(content)} />
           </>
         }
