@@ -1,9 +1,9 @@
 import React from 'react'
 // import SEO from '../components/seo'
 import Layout from '@components/organisms/Layout'
-import Heading from '@components/atoms/Heading'
 import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
+import PostHeader from '@components/molecules/PostHeader'
 import Posts from '@components/molecules/Posts'
 export default function Blog({data}) {
   const posts = data?.allMdx?.nodes
@@ -12,7 +12,7 @@ export default function Blog({data}) {
     <Layout>
       {/* <SEO title="All posts" /> */}
       <section>
-        <Heading tag="h1">Blog</Heading>
+        <PostHeader title="Blog" />
         <Posts posts={posts} />
       </section>
     </Layout>
@@ -21,9 +21,7 @@ export default function Blog({data}) {
 
 Blog.propTypes = {
   data: PropTypes.shape({
-    allMdx: PropTypes.shape({
-      nodes: PropTypes.arrayOf(PropTypes.object)
-    }),
+    allMdx: PropTypes.object
   }),
 }
 
