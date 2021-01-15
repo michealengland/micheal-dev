@@ -1,0 +1,23 @@
+.posts {
+  @apply text-nuetral-dark;
+
+  & .inner {
+    @apply p-4 max-w-3xl mx-auto;
+  }
+
+  & .post {
+    @apply mb-8;
+  }
+
+  & .title {
+    @apply text-2xl mb-0 text-primary-purple2;
+  }
+
+  & .date {
+    @apply inline-block font-semibold mb-2;
+  }
+
+  & .content {
+    @apply text-base;
+  }
+}
