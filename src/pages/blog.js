@@ -1,12 +1,10 @@
 import React from 'react'
 // import SEO from '../components/seo'
 import Layout from '@components/organisms/Layout'
-import Link from '@components/atoms/Link'
 import Heading from '@components/atoms/Heading'
 import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
-import createMarkup from '@utilities/createMarkup'
-
+import Posts from '@components/molecules/Posts'
 export default function Blog({data}) {
   const posts = data?.allMdx?.nodes
 
@@ -15,30 +13,7 @@ export default function Blog({data}) {
       {/* <SEO title="All posts" /> */}
       <section>
         <Heading tag="h1">Blog</Heading>
-        {!! posts?.length > 0 && posts.map((post, index) => {
-          const {
-            excerpt,
-            frontmatter:{
-              date,
-              title
-            },
-            slug
-          } = post
-
-          return (
-            <article key={index}>
-              { slug && title &&
-                <Heading tag="h2">
-                  <Link to={`blog${slug}`}>
-                    {title}
-                  </Link>
-                </Heading>
-              }
-              {date && <small>{date}</small>}
-              {excerpt && <p dangerouslySetInnerHTML={createMarkup(excerpt)} />}
-            </article>
-          )
-        })}
+        <Posts posts={posts} />
       </section>
     </Layout>
   )
