@@ -3,35 +3,38 @@ import PropTypes from 'prop-types'
 import Heading from '@components/atoms/Heading'
 import Link from '@components/atoms/Link'
 import createMarkup from '@utilities/createMarkup'
+import styles from './Posts.module.css'
 
 export default function Posts({posts}) {
   return (
-    <>
-      {!! posts?.length > 0 && posts.map((post, index) => {
-        const {
-          excerpt,
-          frontmatter:{
-            date,
-            title
-          },
-          slug
-        } = post
+    <section className={styles.posts}>
+      <div className={styles.inner}>
+        {!! posts?.length > 0 && posts.map((post, index) => {
+          const {
+            excerpt,
+            frontmatter:{
+              date,
+              title
+            },
+            slug
+          } = post
 
-        return (
-          <article key={index}>
-            { slug && title &&
-            <Heading tag="h2">
+          return (
+            <article className={styles.post} key={index}>
+              { slug && title &&
+            <Heading className={styles.title} tag="h2">
               <Link to={`blog${slug}`}>
                 {title}
               </Link>
             </Heading>
-            }
-            {date && <small>{date}</small>}
-            {excerpt && <p dangerouslySetInnerHTML={createMarkup(excerpt)} />}
-          </article>
-        )
-      })}
-    </>
+              }
+              {date && <small className={styles.date}>{date}</small>}
+              {excerpt && <p className={styles.content} dangerouslySetInnerHTML={createMarkup(excerpt)} />}
+            </article>
+          )
+        })}
+      </div>
+    </section>
   )
 }
 
