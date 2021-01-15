@@ -1,0 +1,13 @@
+.postHeader {
+  & .inner {
+    @apply text-primary-purple2 p-4 max-w-3xl mx-auto font-semibold;
+  }
+
+  & .title {
+    @apply text-4xl md:text-5xl;
+  }
+
+  & .content {
+    @apply text-base;
+  }
+}
