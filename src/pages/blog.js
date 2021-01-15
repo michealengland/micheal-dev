@@ -27,7 +27,7 @@ Blog.propTypes = {
 
 export const pageQuery = graphql`
 query BlogQuery {
-  allMdx {
+  allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
     totalCount
     nodes {
       excerpt
