@@ -27,13 +27,15 @@ export default function Blog({data}) {
 
           return (
             <article key={index}>
-              <Heading tag="h2">
-                <Link to={`blog${slug}`}>
-                  {title}
-                </Link>
-              </Heading>
-              <small>{date}</small>
-              <p dangerouslySetInnerHTML={createMarkup(excerpt)} />
+              { slug && title &&
+                <Heading tag="h2">
+                  <Link to={`blog${slug}`}>
+                    {title}
+                  </Link>
+                </Heading>
+              }
+              {date && <small>{date}</small>}
+              {excerpt && <p dangerouslySetInnerHTML={createMarkup(excerpt)} />}
             </article>
           )
         })}
