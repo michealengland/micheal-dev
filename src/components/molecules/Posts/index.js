@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Heading from '@components/atoms/Heading'
-import Link from '@components/atoms/Link'
+import TextLink from '@components/atoms/TextLink'
 import createMarkup from '@utilities/createMarkup'
 import styles from './Posts.module.css'
 
@@ -23,9 +23,9 @@ export default function Posts({posts}) {
             <article className={styles.post} key={index}>
               { slug && title &&
             <Heading className={styles.title} tag="h2">
-              <Link to={`blog${slug}`}>
+              <TextLink to={`blog/${slug}`}>
                 {title}
-              </Link>
+              </TextLink>
             </Heading>
               }
               {date && <small className={styles.date}>{date}</small>}
