@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Micheal Dev',
+    title: 'Micheal England',
+    author: 'Micheal England',
+    description: 'I\'m a Front-end Engineer that is passionate about all things JavaScript related.',
+    siteUrl: 'https://micheal.dev/',
+    social: {
+      twitter: 'mikelikethebike',
+    },
   },
   plugins: [
     'gatsby-plugin-postcss',
