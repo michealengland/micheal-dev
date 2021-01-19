@@ -11,14 +11,12 @@ Array [
   </a>,
   <a
     className="button"
-    displayType={false}
     href="https://micheal.dev"
   >
     External Link
   </a>,
   <a
     className="button"
-    displayType={false}
     href="https://micheal.dev"
   >
     https://micheal.dev

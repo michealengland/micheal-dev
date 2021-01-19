@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import TextLink from '../components/atoms/TextLink'
-describe('Link', () => {
+describe('TextLink', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(<TextLink to="/">Home Link</TextLink>)
