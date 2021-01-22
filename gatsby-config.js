@@ -26,7 +26,6 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-plugin-mdx',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
@@ -74,6 +73,24 @@ module.exports = {
         path: `${__dirname}/content/blog/`,
       },
     },
-    'gatsby-plugin-mdx',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-vscode',
+            options: {
+              plugins: [{
+                resolve: 'gatsby-remark-vscode',
+                options: {
+                  theme: 'Abyss' // Or install your favorite theme from GitHub
+                }
+              }]
+            }
+          },
+        ],
+      },
+    },
   ],
 }
