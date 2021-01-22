@@ -31,7 +31,3 @@ Link.propTypes = {
   partiallyActive: PropTypes.bool,
   to: PropTypes.string.isRequired,
 }
-
-Link.defaultProps = {
-  displayType: false,
-}
