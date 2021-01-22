@@ -8,25 +8,18 @@ import Layout from '@components/organisms/Layout'
 
 export default function BlogPostTemplate({data, location, pageContext}) {
   const post = data.mdx
-  // const siteTitle = data.site.siteMetadata.title
-  const siteTitle = 'MEOw mEOW'
   const {previous, next} = pageContext
 
   return (
-    <Layout
-      location={location}
-      title={siteTitle}
-    >
+    <Layout>
       {/* <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       /> */}
       <h1>{post.frontmatter.title}</h1>
-      <p>
-        {post.frontmatter.date}
-      </p>
+      <p>{post.frontmatter.date}</p>
       <MDXRenderer>{post.body}</MDXRenderer>
-      <hr/>
+      <hr />
       {/* <Bio /> */}
 
       <ul>
@@ -57,7 +50,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    mdx(fields: { slug: { eq: $slug } }) {
+    mdx(fields: {slug: {eq: $slug}}) {
       id
       excerpt(pruneLength: 160)
       body
