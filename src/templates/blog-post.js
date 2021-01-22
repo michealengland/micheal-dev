@@ -5,6 +5,8 @@ import {MDXRenderer} from 'gatsby-plugin-mdx'
 // import Bio from '../components/bio'
 import Layout from '@components/organisms/Layout'
 // import SEO from '../components/seo'
+import PostContent from '@components/molecules/PostContent'
+import PostHeader from '@components/molecules/PostHeader'
 
 export default function BlogPostTemplate({data, location, pageContext}) {
   const post = data.mdx
@@ -16,9 +18,13 @@ export default function BlogPostTemplate({data, location, pageContext}) {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       /> */}
-      <h1>{post.frontmatter.title}</h1>
-      <p>{post.frontmatter.date}</p>
-      <MDXRenderer>{post.body}</MDXRenderer>
+      <PostHeader
+        title={post.frontmatter.title}
+        content={post.frontmatter.date}
+      />
+      <PostContent>
+        <MDXRenderer>{post.body}</MDXRenderer>
+      </PostContent>
       <hr />
       {/* <Bio /> */}
 
