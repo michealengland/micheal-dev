@@ -1,6 +1,6 @@
 .postHeader {
   & .inner {
-    @apply text-primary-purple2 p-4 max-w-3xl mx-auto font-semibold;
+    @apply text-primary-purple2 py-10 pb-4 px-4 max-w-3xl mx-auto font-semibold;
   }
 
   & .title {
