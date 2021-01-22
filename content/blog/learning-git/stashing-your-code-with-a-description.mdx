@@ -16,7 +16,9 @@ Similar to `git commit -m` using `git stash save` adds a brief description that 
 
 After making changes I run the following command in the terminal and replace out the text inside of the quotations with a meaningful description.
 
-    git stash save "Descriptive text"
+```sh
+git stash save "Descriptive text"
+```
 
 Then when I'm ready to reference this stash again, I run `git stash list` followed up `git stash apply` and the ID of the stash I would like to open.
 
@@ -26,7 +28,9 @@ Assuming that I've already made some stashes using `git stash save` on a repo. F
 
 This is what my CL displays after running `git stash list`.
 
-    stash@{0}: WIP on master: 3b95319 Added first blog.
-    stash@{1}: WIP on master: 24059fc Made various tweaks to layout component.
+```sh
+stash@{0}: WIP on master: 3b95319 Added first blog.
+stash@{1}: WIP on master: 24059fc Made various tweaks to layout component.
+```
 
 After that, I'll copy the ID of the stash I want to apply. In this case, I'll apply the second option using `git stash apply stash@{1}`. This will apply the code from my stash to the current head of whatever branch I'm checked into. After that my changes are applied and I'm ready to continue where I left off.
