@@ -4,7 +4,6 @@ exports[`Button renders correctly 1`] = `
 Array [
   <a
     className="button"
-    displayType={false}
     href="/"
   >
     Internal Link
