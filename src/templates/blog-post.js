@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import AuthorBio from '@components/molecules/AuthorBio'
@@ -8,7 +9,7 @@ import PostContent from '@components/molecules/PostContent'
 import PostHeader from '@components/molecules/PostHeader'
 import PostNavigation from '@components/molecules/PostNavigation'
 
-export default function BlogPostTemplate({data, location, pageContext}) {
+export default function BlogPostTemplate({data, pageContext}) {
   const post = data.mdx
   const {previous, next} = pageContext
 
@@ -34,6 +35,11 @@ export default function BlogPostTemplate({data, location, pageContext}) {
       />
     </Layout>
   )
+}
+
+BlogPostTemplate.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
 }
 
 export const pageQuery = graphql`
