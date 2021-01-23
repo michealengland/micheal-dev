@@ -23,13 +23,13 @@
     @apply mb-6;
 
     & code {
-      @apply text-primary-purple1 bg-purple-100 text-sm rounded-sm;
+      @apply text-primary-purple1 bg-purple-100 font-mono text-sm rounded-sm;
 
       padding: 0.125rem;
     }
   }
 
   & pre {
-    @apply text-xs mb-4 rounded-sm py-4;
+    @apply text-xs mb-4 rounded-sm py-4 font-mono;
   }
 }
