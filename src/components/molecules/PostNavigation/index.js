@@ -1,10 +1,11 @@
 import React from 'react'
 import TextLink from '@components/atoms/TextLink'
 import PropTypes from 'prop-types'
+import styles from './PostNavigation.module.css'
 
 export default function PostNavigation({nextLabel, nextTo, prevLabel, prevTo}) {
   return (
-    <ul>
+    <ul className={styles.postNavigation}>
       <li>
         {prevTo && (
           <TextLink to={prevTo} rel="prev">
