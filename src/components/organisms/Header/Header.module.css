@@ -1,5 +1,9 @@
 .header {
-  @apply text-nuetral-white bg-primary-purple1 flex items-center p-4;
+  @apply text-nuetral-white bg-primary-purple1 p-4;
+
+  & .inner {
+    @apply flex items-center max-w-7xl mx-auto;
+  }
 
   & .menu {
     @apply inline-block;
