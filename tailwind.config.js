@@ -25,30 +25,30 @@ module.exports = {
         margin: 'auto'
       },
       fontFamily: {
-        sans: ['Muli, sans-serif'],
-        mono: ['Menlo, monospace'],
+        sans: ['Mulish, sans-serif'],
+        mono: ['Menlo, monospace']
       },
       colors: {
         primary: {
           purple: '#639',
           purple1: '#020041',
-          purple2: '#170387',
+          purple2: '#170387'
         },
         secondary: {
-          pink: '#ff1ee5',
+          pink: '#ff1ee5'
         },
         tertiary: {
-          teal: '#74edf1',
+          teal: '#74edf1'
         },
         nuetral: {
           white: '#fff',
-          dark: '#333',
+          dark: '#333'
         }
       },
       zIndex: {
-        'behind': -1,
-        '0': 0,
-        '1': 1,
+        behind: -1,
+        0: 0,
+        1: 1
       }
     }
   },
