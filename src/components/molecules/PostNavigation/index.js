@@ -5,7 +5,11 @@ import styles from './PostNavigation.module.css'
 
 export default function PostNavigation({nextLabel, nextTo, prevLabel, prevTo}) {
   return (
-    <nav className={styles.postNavigation}>
+    <nav
+      aria-label="Post Navigation"
+      className={styles.postNavigation}
+      role="navigation"
+    >
       <ul>
         <li>
           {prevTo && (
