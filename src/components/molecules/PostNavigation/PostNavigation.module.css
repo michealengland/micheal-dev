@@ -1,0 +1,7 @@
+.postNavigation {
+  @apply bg-primary-purple2 text-nuetral-white p-4;
+
+  & ul {
+    @apply flex justify-between;
+  }
+}

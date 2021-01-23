@@ -4,21 +4,18 @@ exports[`Button renders correctly 1`] = `
 Array [
   <a
     className="button"
-    displayType={false}
     href="/"
   >
     Internal Link
   </a>,
   <a
     className="button"
-    displayType={false}
     href="https://micheal.dev"
   >
     External Link
   </a>,
   <a
     className="button"
-    displayType={false}
     href="https://micheal.dev"
   >
     https://micheal.dev

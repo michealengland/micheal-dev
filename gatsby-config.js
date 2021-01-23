@@ -1,14 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: 'Micheal Dev',
+    title: 'Micheal England',
+    author: 'Micheal England',
+    description:
+      'I\'m a Front-end Engineer that is passionate about all things JavaScript related.',
+    siteUrl: 'https://micheal.dev/',
+    social: {
+      twitter: 'mikelikethebike'
+    }
   },
   plugins: [
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-131131549-1',
-      },
+        trackingId: 'UA-131131549-1'
+      }
     },
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
@@ -17,26 +24,25 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
-      },
+        icon: 'src/images/icon.png'
+      }
     },
-    'gatsby-plugin-mdx',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/',
+        path: './src/images/'
       },
-      __key: 'images',
+      __key: 'images'
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',
-        path: './src/pages/',
+        path: './src/pages/'
       },
-      __key: 'pages',
+      __key: 'pages'
     },
     {
       resolve: 'gatsby-plugin-prettier-eslint',
@@ -49,17 +55,40 @@ module.exports = {
             '**/*.{graphql}',
             '**/*.{md,mdx}',
             '**/*.{html}',
-            '**/*.{yaml,yml}',
-          ],
+            '**/*.{yaml,yml}'
+          ]
         },
         eslint: {
           patterns: '**/*.{js,jsx,ts,tsx}',
           customOptions: {
-            fix: true,
+            fix: true
             // cache: true,
-          },
-        },
-      },
+          }
+        }
+      }
     },
-  ],
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/content/blog/`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-vscode',
+            options: {
+              // theme: 'Abyss' // Or install your favorite theme from GitHub
+              theme: 'SynthWave \'84', // From package.json: contributes.themes[0].label
+              extensions: ['synthwave-vscode'] // From package.json: name
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

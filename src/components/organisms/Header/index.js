@@ -1,19 +1,19 @@
 import React from 'react'
-import Link from '@components/atoms/Link'
+import TextLink from '@components/atoms/TextLink'
 import Logo from '@content/assets/me-icon.png'
 import styles from './Header.module.css'
 
 export default function Header() {
   return <header className={styles.header}>
     <div className={styles.logo}>
-      <Link to={ '/' }>
+      <TextLink to={ '/' }>
         <img src={ Logo } alt="Micheal.dev logo" />
-      </Link>
+      </TextLink>
     </div>
     <nav className={styles.menu}>
       <ul>
         <li>
-          <Link to={ '/blog' }>Blog</Link>
+          <TextLink to={ '/blog' }>Blog</TextLink>
         </li>
       </ul>
     </nav>

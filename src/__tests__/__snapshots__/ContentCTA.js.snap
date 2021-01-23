@@ -26,7 +26,6 @@ Array [
       />
       <a
         className="button button"
-        displayType={false}
         href="https://codepen.io/mengland/pens/"
       >
         Button Label
@@ -63,7 +62,6 @@ Array [
       />
       <a
         className="button button"
-        displayType={false}
         href="https://twitter.com/mikelikethebike"
       >
         Button Label

@@ -9,7 +9,6 @@ Array [
       className="logo"
     >
       <a
-        displayType={false}
         href="/"
       >
         <img
@@ -24,7 +23,6 @@ Array [
       <ul>
         <li>
           <a
-            displayType={false}
             href="/blog"
           >
             Blog

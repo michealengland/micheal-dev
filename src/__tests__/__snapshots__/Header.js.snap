@@ -8,7 +8,6 @@ exports[`Header renders correctly 1`] = `
     className="logo"
   >
     <a
-      displayType={false}
       href="/"
     >
       <img
@@ -23,7 +22,6 @@ exports[`Header renders correctly 1`] = `
     <ul>
       <li>
         <a
-          displayType={false}
           href="/blog"
         >
           Blog
