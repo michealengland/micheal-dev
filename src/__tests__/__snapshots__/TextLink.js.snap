@@ -1,10 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextLink renders correctly 1`] = `
-<a
-  displayType={false}
-  href="/"
->
-  Home Link
-</a>
+Array [
+  <a
+    href="/"
+  >
+    Home Link
+  </a>,
+  <a
+    href="https://micheal.dev"
+  >
+    Home Link
+  </a>,
+]
 `;
