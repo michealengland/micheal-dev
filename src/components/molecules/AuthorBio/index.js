@@ -7,6 +7,7 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
+import styles from './AuthorBio.module.css'
 
 export default function AuthorBio() {
   return (
@@ -15,7 +16,7 @@ export default function AuthorBio() {
       render={(data) => {
         const {author} = data.site.siteMetadata
         return (
-          <div>
+          <div className={styles.authorBio}>
             <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
             <p>
               Written by <strong>{author}</strong>.
