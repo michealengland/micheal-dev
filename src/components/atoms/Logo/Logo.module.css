@@ -1,3 +1,50 @@
+@keyframes rotate-left {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    margin: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate-right {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    margin: 0;
+    transform: rotate(0deg);
+  }
+}
+
 .logo {
-  @apply bg-primary-purple2;
+  @apply flex items-center content-center relative;
+
+  > div {
+    position: relative;
+    text-align: center;
+  }
+
+  & svg {
+    @apply fill-current relative;
+
+    width: 3vw;
+    height: auto;
+
+    &:first-child {
+      animation: rotate-left 1s linear 3s;
+      animation-fill-mode: forwards;
+      margin-right: 4vw;
+      margin-left: -4vw;
+      transform: rotate(-90deg);
+    }
+    &:nth-child(2) {
+      animation: rotate-right 1s linear 3s;
+      animation-fill-mode: forwards;
+      margin-right: -4vw;
+      margin-left: 4vw;
+      transform: rotate(90deg);
+    }
+  }
 }
