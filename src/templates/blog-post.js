@@ -4,7 +4,7 @@ import {graphql} from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import AuthorBio from '@components/molecules/AuthorBio'
 import Layout from '@components/organisms/Layout'
-// import SEO from '../components/seo'
+import SEO from '@components/atoms/SEO'
 import PostContent from '@components/molecules/PostContent'
 import PostHeader from '@components/molecules/PostHeader'
 import PostNavigation from '@components/molecules/PostNavigation'
@@ -15,10 +15,10 @@ export default function BlogPostTemplate({data, pageContext}) {
 
   return (
     <Layout>
-      {/* <SEO
+      <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-      /> */}
+      />
       <PostHeader
         title={post.frontmatter.title}
         content={post.frontmatter.date}
