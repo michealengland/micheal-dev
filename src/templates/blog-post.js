@@ -1,12 +1,12 @@
 import React from 'react'
 import {graphql} from 'gatsby'
-import TextLink from '@components/atoms/TextLink'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
-// import Bio from '../components/bio'
+import AuthorBio from '@components/molecules/AuthorBio'
 import Layout from '@components/organisms/Layout'
 // import SEO from '../components/seo'
 import PostContent from '@components/molecules/PostContent'
 import PostHeader from '@components/molecules/PostHeader'
+import PostNavigation from '@components/molecules/PostNavigation'
 
 export default function BlogPostTemplate({data, location, pageContext}) {
   const post = data.mdx
@@ -24,26 +24,14 @@ export default function BlogPostTemplate({data, location, pageContext}) {
       />
       <PostContent>
         <MDXRenderer>{post.body}</MDXRenderer>
+        <AuthorBio />
       </PostContent>
-      <hr />
-      {/* <Bio /> */}
-
-      <ul>
-        <li>
-          {previous && (
-            <TextLink to={`blog${previous.fields.slug}`} rel="prev">
-              ← {previous.frontmatter.title}
-            </TextLink>
-          )}
-        </li>
-        <li>
-          {next && (
-            <TextLink to={`blog${next.fields.slug}`} rel="next">
-              {next.frontmatter.title} →
-            </TextLink>
-          )}
-        </li>
-      </ul>
+      <PostNavigation
+        nextLabel={next?.frontmatter?.title}
+        nextTo={next?.fields?.slug}
+        prevLabel={previous?.frontmatter?.title}
+        prevTo={previous?.fields?.slug}
+      />
     </Layout>
   )
 }
