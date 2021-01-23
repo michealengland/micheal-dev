@@ -17,6 +17,7 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "@fontsource/fira-code": "^4.1.0",
     "@fontsource/mulish": "^4.1.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
