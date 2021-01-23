@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './PostContent.module.css'
 import cn from 'classnames'
+import '@fontsource/fira-code/400.css'
 
 export default function PostContent({children, className}) {
   return (
