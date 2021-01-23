@@ -1,0 +1,11 @@
+.authorBio {
+  @apply flex items-center;
+
+  & img {
+    @apply rounded-full mb-0 mr-auto;
+  }
+
+  & p {
+    @apply mb-0;
+  }
+}
