@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <TextLink to={'/'}>
+        <TextLink className={styles.logo} to={'/'}>
           <Logo />
         </TextLink>
         <nav className={styles.menu}>

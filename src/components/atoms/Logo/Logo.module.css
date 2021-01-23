@@ -1,10 +1,9 @@
 @keyframes rotate-left {
   0% {
-    transform: rotate(-90deg);
+    transform: rotate(0deg);
   }
   100% {
-    margin: 0;
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
   }
 }
 
@@ -18,33 +17,66 @@
   }
 }
 
-.logo {
-  @apply flex items-center content-center relative;
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-  > div {
+.logo {
+  @apply relative;
+
+  & > .inner {
+    @apply flex items-center content-center;
+
     position: relative;
     text-align: center;
+
+    &::after {
+      @apply bg-nuetral-white;
+
+      content: '';
+      display: block;
+      height: 2.75rem;
+      width: 0.25rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transform: rotate(18deg);
+      opacity: 0;
+      transition: 200ms linear all;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+
+      & svg {
+        &:first-child {
+          transform: rotate(-90deg) translate(0, -0.75rem);
+        }
+        &:nth-child(2) {
+          transform: rotate(90deg) translate(0, -0.75rem);
+        }
+      }
+    }
   }
 
   & svg {
     @apply fill-current relative;
 
-    width: 3vw;
+    width: 2rem;
     height: auto;
 
-    &:first-child {
-      animation: rotate-left 1s linear 3s;
-      animation-fill-mode: forwards;
-      margin-right: 4vw;
-      margin-left: -4vw;
-      transform: rotate(-90deg);
-    }
+    &:first-child,
     &:nth-child(2) {
-      animation: rotate-right 1s linear 3s;
-      animation-fill-mode: forwards;
-      margin-right: -4vw;
-      margin-left: 4vw;
-      transform: rotate(90deg);
+      transition: 200ms linear all;
+      transform: rotate(0deg);
     }
   }
 }
