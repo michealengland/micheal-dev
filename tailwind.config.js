@@ -26,7 +26,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Mulish, sans-serif'],
-        mono: ['Menlo, monospace']
+        mono: ['Fira Code, monospace']
       },
       colors: {
         primary: {
