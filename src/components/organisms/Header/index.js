@@ -8,16 +8,13 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <div className={styles.logo}>
+        <TextLink to={'/'}>
           <Logo />
-          {/* <TextLink to={ '/' }>
-            <img src={ Logo } alt="Micheal.dev logo" />
-          </TextLink> */}
-        </div>
+        </TextLink>
         <nav className={styles.menu}>
           <ul>
             <li>
-              <TextLink to={ '/blog' }>Blog</TextLink>
+              <TextLink to={'/blog'}>Blog</TextLink>
             </li>
           </ul>
         </nav>
