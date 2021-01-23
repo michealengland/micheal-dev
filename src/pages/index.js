@@ -4,22 +4,26 @@ import Hero from '@components/molecules/Hero'
 import Content from '@components/molecules/Content'
 import MediaContent from '@components/molecules/MediaContent'
 import ContentCTA from '@components/molecules/ContentCTA'
+import SEO from '@components/atoms/SEO'
 
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO
+        title="Mike England"
+        description="Frontend Engineer / Designer / Motorcycle Enthusiast"
+      />
       <Hero
-        title={'I\'m Mike England'}
-        content={'Frontend Engineer / Designer / Motorcycle Enthusiast'}
-        img={'./images/wcus2018-hall-track-1.jpg'}
+        title="I'm Mike England"
+        content="Frontend Engineer / Designer / Motorcycle Enthusiast"
+        img="./images/wcus2018-hall-track-1.jpg"
       />
       <Content
-        title={ 'About Me' }
+        title="About Me"
         titleTag="h2"
-        content={ 'I\'m a Frontend Engineer at WebDevStudios and I\'m passionate about all things JavaScript. Building awesome websites, tools, and web applications is my passion!' }
+        content="I'm a Frontend Engineer at WebDevStudios and I'm passionate about all things JavaScript. Building awesome websites, tools, and web applications is my passion!"
       />
       <MediaContent
-        // backgroundColor={ `#f2e6f0` }
         imgClipRight={ true }
         img="/images/farzad-nazifi-71686-unsplash.jpg"
         title="Code Skills"
@@ -36,13 +40,11 @@ const IndexPage = () => {
         `}
       />
       <MediaContent
-        // backgroundColor={ '#ebeef3' }
         img="./images/tomasz-zagorski-1097343-unsplash.jpg"
         title="Design Skills"
         content="<p>Like many front-enders I started out as a designer creating everything from branding projects to website concepts.</p>"
       />
       <MediaContent
-        // backgroundColor={ '#f9f7fb' }
         imgClipRight={ true }
         img="./images/anete-lusina-382329-unsplash.jpg"
         title="100 Days of Code"
