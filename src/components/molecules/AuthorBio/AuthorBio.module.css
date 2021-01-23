@@ -4,8 +4,8 @@
   & .avatar {
     @apply rounded-full mb-0 mr-4;
 
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 3.125rem;
+    max-height: 3.125rem;
   }
 
   & .content {
