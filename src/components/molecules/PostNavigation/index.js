@@ -10,7 +10,7 @@ export default function PostNavigation({nextLabel, nextTo, prevLabel, prevTo}) {
       className={styles.postNavigation}
       role="navigation"
     >
-      <ul>
+      <ul className={styles.inner}>
         <li>
           {prevTo && (
             <TextLink to={prevTo} rel="prev">
