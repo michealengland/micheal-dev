@@ -29,9 +29,9 @@ export default function BlogPostTemplate({data, pageContext}) {
       </PostContent>
       <PostNavigation
         nextLabel={next?.frontmatter?.title}
-        nextTo={next?.fields?.slug}
+        nextTo={next?.fields?.slug && `/blog${next?.fields?.slug}`}
         prevLabel={previous?.frontmatter?.title}
-        prevTo={previous?.fields?.slug}
+        prevTo={previous?.fields?.slug && `/blog${previous?.fields?.slug}`}
       />
     </Layout>
   )
