@@ -7,7 +7,7 @@ export default function Error404({content, title}) {
     <section>
       <title>{title}</title>
       <h1>{title}</h1>
-      <p>{content}</p>
+      {!!content && <p>{content}</p>}
       <Link to="/">Go home</Link>
     </section>
   )
