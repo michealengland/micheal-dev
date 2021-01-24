@@ -1,13 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default function Arrow({className, fill, height, style, width}) {
+export default function Arrow({className, fill, height, width}) {
   return (
     <svg
       className={className}
       viewBox="0 0 32 32"
       width={width}
       height={height}
-      style={style}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -21,4 +21,11 @@ export default function Arrow({className, fill, height, style, width}) {
       />
     </svg>
   )
+}
+
+Arrow.propTypes = {
+  className: PropTypes.string,
+  fill: PropTypes.string,
+  height: PropTypes.number,
+  width: PropTypes.number
 }
