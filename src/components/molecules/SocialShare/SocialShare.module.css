@@ -6,14 +6,22 @@
   }
 
   & li {
-    @apply bg-primary-purple ml-4 rounded-full overflow-hidden;
+    @apply ml-4 rounded-full overflow-hidden text-tertiary-teal;
+  }
+
+  & a {
+    &:hover .icon,
+    &:focus .icon {
+      transform: scale(1.4, 1.4);
+    }
   }
 
   & .icon {
-    @apply block bg-primary-purple;
+    @apply flex items-center justify-center p-1;
 
     height: 32px;
     width: 32px;
+    transition: 200ms linear all;
   }
 
   & .label {
