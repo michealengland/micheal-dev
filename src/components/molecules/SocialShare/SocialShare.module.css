@@ -1,0 +1,22 @@
+.socialShare {
+  @apply inline-block;
+
+  & ul {
+    @apply flex flex-nowrap flex-row;
+  }
+
+  & li {
+    @apply bg-primary-purple ml-4 rounded-full overflow-hidden;
+  }
+
+  & .icon {
+    @apply block bg-primary-purple;
+
+    height: 32px;
+    width: 32px;
+  }
+
+  & .label {
+    @apply sr-only;
+  }
+}
