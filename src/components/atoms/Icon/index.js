@@ -24,7 +24,7 @@ export default function Icon({ariaHidden, className, icon, title}) {
 Icon.propTypes = {
   ariaHidden: PropTypes.bool,
   className: PropTypes.string,
-  //   icon: PropTypes.oneOf(Object.keys(icons)).isRequired,
+  icon: PropTypes.oneOf('twitter'),
   title: PropTypes.string.isRequired
 }
 
