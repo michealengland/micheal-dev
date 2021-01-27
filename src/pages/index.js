@@ -16,7 +16,7 @@ const IndexPage = () => {
       <Hero
         title="I'm Mike England"
         content="Frontend Engineer / Designer / Motorcycle Enthusiast"
-        img="./images/wcus2018-hall-track-1.jpg"
+        img='./images/adrien-converse-REL986jyuX4-unsplash.jpg'
       />
       <Content
         title="About Me"
@@ -25,7 +25,7 @@ const IndexPage = () => {
       />
       <MediaContent
         imgClipRight={ true }
-        img="/images/farzad-nazifi-71686-unsplash.jpg"
+        img="./images/anas-alshanti-feXpdV001o4-unsplash.jpg"
         title="Code Skills"
         content={`
         <p>I enjoy writing clean code and creating user experiences. Here are some of the areas I'm focused on currently.</p>
@@ -40,13 +40,13 @@ const IndexPage = () => {
         `}
       />
       <MediaContent
-        img="./images/tomasz-zagorski-1097343-unsplash.jpg"
+        img="./images/harpal-singh-_zKxPsGOGKg-unsplash.jpg"
         title="Design Skills"
         content="<p>Like many front-enders I started out as a designer creating everything from branding projects to website concepts.</p>"
       />
       <MediaContent
         imgClipRight={ true }
-        img="./images/anete-lusina-382329-unsplash.jpg"
+        img="./images/github-contributions-edited.jpg"
         title="100 Days of Code"
         content="<p>Outside of work, I'm participating in the #100DaysOfCode challenge. During this time I've been working leveling up my JavaScript skills, building out WordPress plugins, and recreating my site with Gatsby.</p>"
       />
@@ -58,7 +58,7 @@ const IndexPage = () => {
       />
       <ContentCTA
         content="Want to discuss a project? Message me on Twitter."
-        img="./images/ash-goldsbrough-1092046-unsplash.jpg"
+        img="./images/adrien-converse-kCrrUx7US04-unsplash.jpg"
         label="Message"
         title="Let's Connect"
         url="https://twitter.com/mikelikethebike"
