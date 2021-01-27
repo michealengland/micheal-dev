@@ -5,12 +5,12 @@ import Icon from '@components/atoms/Icon'
 export default function SocialShare() {
   const socialAccounts = [
     {
-      icon: 'twitter',
+      icon: 'github',
       label: 'Github',
       url: 'https://github.com/michealengland'
     },
     {
-      icon: 'twitter',
+      icon: 'linkedin',
       label: 'Linkedin',
       url: 'https://www.linkedin.com/in/michealengland/'
     },
@@ -30,7 +30,7 @@ export default function SocialShare() {
           return (
             <li key={`social-${index}`}>
               <a href={url} target="_blank" rel="noreferrer">
-                <span className={styles.icon}><Icon icon={icon} title={label} /></span>
+                <Icon className={styles.icon} icon={icon} title={label} />
                 <span className={styles.label}>{label}</span>
               </a>
             </li>
