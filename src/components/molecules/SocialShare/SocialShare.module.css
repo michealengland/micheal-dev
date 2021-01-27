@@ -6,7 +6,7 @@
   }
 
   & li {
-    @apply ml-4 rounded-full overflow-hidden text-tertiary-teal;
+    @apply ml-4 text-tertiary-teal;
   }
 
   & a {
@@ -17,10 +17,10 @@
   }
 
   & .icon {
-    @apply flex items-center justify-center p-1;
+    @apply flex items-center justify-center p-1 fill-current;
 
-    height: 32px;
-    width: 32px;
+    height: 2rem;
+    width: 2rem;
     transition: 200ms linear all;
   }
 
