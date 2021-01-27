@@ -3,6 +3,7 @@ import TextLink from '@components/atoms/TextLink'
 // import Logo from '@content/assets/me-icon.png'
 import Logo from '@components/atoms/Logo'
 import styles from './Header.module.css'
+import SocialIcons from '@components/molecules/SocialShare'
 
 export default function Header() {
   return (
@@ -18,6 +19,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+        <SocialIcons />
       </div>
     </header>
   )
