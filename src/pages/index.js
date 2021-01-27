@@ -16,7 +16,7 @@ const IndexPage = () => {
       <Hero
         title="I'm Mike England"
         content="Frontend Engineer / Designer / Motorcycle Enthusiast"
-        img="./images/wcus2018-hall-track-1.jpg"
+        img='./images/adrien-converse-REL986jyuX4-unsplash.jpg'
       />
       <Content
         title="About Me"
@@ -25,7 +25,7 @@ const IndexPage = () => {
       />
       <MediaContent
         imgClipRight={ true }
-        img="/images/farzad-nazifi-71686-unsplash.jpg"
+        img="./images/farzad-nazifi-71686-unsplash.jpg"
         title="Code Skills"
         content={`
         <p>I enjoy writing clean code and creating user experiences. Here are some of the areas I'm focused on currently.</p>
@@ -58,7 +58,7 @@ const IndexPage = () => {
       />
       <ContentCTA
         content="Want to discuss a project? Message me on Twitter."
-        img="./images/ash-goldsbrough-1092046-unsplash.jpg"
+        img="./images/adrien-converse-kCrrUx7US04-unsplash.jpg"
         label="Message"
         title="Let's Connect"
         url="https://twitter.com/mikelikethebike"
