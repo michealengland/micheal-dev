@@ -1,20 +1,21 @@
 import React from 'react'
 import styles from './SocialShare.module.css'
+import Icon from '@components/atoms/Icon'
 
 export default function SocialShare() {
   const socialAccounts = [
     {
-      icon: '',
+      icon: 'twitter',
       label: 'Github',
       url: 'https://github.com/michealengland'
     },
     {
-      icon: '',
+      icon: 'twitter',
       label: 'Linkedin',
       url: 'https://www.linkedin.com/in/michealengland/'
     },
     {
-      icon: '',
+      icon: 'twitter',
       label: 'Twitter',
       url: 'https://twitter.com/mikelikethebike'
     },
@@ -23,13 +24,13 @@ export default function SocialShare() {
   return (
     <nav className={styles.socialShare} role="navigation" aria-label="social links">
       <ul>
-        { socialAccounts.map((account) => {
+        { socialAccounts.map((account, index) => {
           const {icon, label, url} = account
 
           return (
-            <li key={`social-${icon}`}>
-              <a href={url}>
-                <span className={styles.icon}>{icon}</span>
+            <li key={`social-${index}`}>
+              <a href={url} target="_blank" rel="noreferrer">
+                <span className={styles.icon}><Icon icon={icon} /></span>
                 <span className={styles.label}>{label}</span>
               </a>
             </li>
