@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './SocialShare.module.css'
 
 export default function SocialShare() {
   const socialAccounts = [
@@ -20,14 +21,17 @@ export default function SocialShare() {
   ]
 
   return (
-    <nav role="navigation" aria-label="social links">
+    <nav className={styles.socialShare} role="navigation" aria-label="social links">
       <ul>
         { socialAccounts.map((account) => {
           const {icon, label, url} = account
 
           return (
             <li key={`social-${icon}`}>
-              <a href={url}><span>{icon}</span>{label}</a>
+              <a href={url}>
+                <span className={styles.icon}>{icon}</span>
+                <span className={styles.label}>{label}</span>
+              </a>
             </li>
           )
         }) }
