@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Link} from 'gatsby'
+import Button from '@components/atoms/Button'
 import styles from './Error404.module.css'
 
 export default function Error404({content, title}) {
@@ -9,7 +9,7 @@ export default function Error404({content, title}) {
       <title>{title}</title>
       <h1 className={styles.title}>{title}</h1>
       {!!content && <p className={styles.content}>{content}</p>}
-      <Link to="/">Go home</Link>
+      <Button to="/" label="Back to Micheal.dev" />
     </section>
   )
 }
