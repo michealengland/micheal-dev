@@ -30,7 +30,7 @@ export default function SocialShare() {
           return (
             <li key={`social-${index}`}>
               <a href={url} target="_blank" rel="noreferrer">
-                <span className={styles.icon}><Icon icon={icon} /></span>
+                <span className={styles.icon}><Icon icon={icon} title={label} /></span>
                 <span className={styles.label}>{label}</span>
               </a>
             </li>
