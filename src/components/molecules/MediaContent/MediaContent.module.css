@@ -40,6 +40,9 @@
 
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
     grid-area: media-text-media;
+    /* fix issue in Chrome. */
+    margin-bottom: -1px;
+    height: calc(100% + 1px);
 
     @screen md {
       &.clipLeft {
