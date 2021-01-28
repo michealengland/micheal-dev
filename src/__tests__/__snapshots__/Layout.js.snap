@@ -62,6 +62,71 @@ Array [
           </li>
         </ul>
       </nav>
+      <nav
+        aria-label="social links"
+        className="socialShare"
+        role="navigation"
+      >
+        <ul>
+          <li>
+            <a
+              href="https://github.com/michealengland"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <span
+                aria-hidden={true}
+                className="icon"
+              >
+                <test-file-stub />
+              </span>
+              <span
+                className="label"
+              >
+                Github
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/michealengland/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <span
+                aria-hidden={true}
+                className="icon"
+              >
+                <test-file-stub />
+              </span>
+              <span
+                className="label"
+              >
+                Linkedin
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/mikelikethebike"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <span
+                aria-hidden={true}
+                className="icon"
+              >
+                <test-file-stub />
+              </span>
+              <span
+                className="label"
+              >
+                Twitter
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>,
   <main

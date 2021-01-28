@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon renders correctly 1`] = `
+Array [
+  <span
+    aria-hidden={true}
+    className="test-icon"
+  >
+    <test-file-stub />
+  </span>,
+  <span
+    aria-hidden={true}
+  >
+    <test-file-stub />
+  </span>,
+  <span
+    aria-hidden={true}
+  >
+    <test-file-stub />
+  </span>,
+]
+`;
