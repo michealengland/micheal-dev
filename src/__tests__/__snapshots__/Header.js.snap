@@ -63,7 +63,7 @@ exports[`Header renders correctly 1`] = `
     </nav>
     <nav
       aria-label="social links"
-      className="socialShare"
+      className="socialLinks"
       role="navigation"
     >
       <ul>

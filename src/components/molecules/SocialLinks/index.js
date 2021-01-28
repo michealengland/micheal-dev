@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from './SocialShare.module.css'
+import styles from './SocialLinks.module.css'
 import Icon from '@components/atoms/Icon'
 
-export default function SocialShare() {
+export default function SocialLinks() {
   const socialAccounts = [
     {
       icon: 'github',
@@ -22,7 +22,7 @@ export default function SocialShare() {
   ]
 
   return (
-    <nav className={styles.socialShare} role="navigation" aria-label="social links">
+    <nav className={styles.socialLinks} role="navigation" aria-label="social links">
       <ul>
         { socialAccounts.map((account, index) => {
           const {icon, label, url} = account

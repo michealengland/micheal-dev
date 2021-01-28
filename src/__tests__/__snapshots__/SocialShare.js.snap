@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SocialShare renders correctly 1`] = `
+exports[`SocialLinks renders correctly 1`] = `
 <nav
   aria-label="social links"
-  className="socialShare"
+  className="socialLinks"
   role="navigation"
 >
   <ul>

@@ -64,7 +64,7 @@ Array [
       </nav>
       <nav
         aria-label="social links"
-        className="socialShare"
+        className="socialLinks"
         role="navigation"
       >
         <ul>

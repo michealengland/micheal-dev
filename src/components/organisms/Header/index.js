@@ -2,7 +2,7 @@ import React from 'react'
 import TextLink from '@components/atoms/TextLink'
 import Logo from '@components/atoms/Logo'
 import styles from './Header.module.css'
-import SocialIcons from '@components/molecules/SocialShare'
+import SocialLinks from '@components/molecules/SocialLinks'
 
 export default function Header() {
   return (
@@ -18,7 +18,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <SocialIcons />
+        <SocialLinks />
       </div>
     </header>
   )

@@ -1,11 +1,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import SocialShare from '@components/molecules/SocialShare'
-describe('SocialShare', () => {
+import SocialLinks from '@components/molecules/SocialLinks'
+describe('SocialLinks', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(
-        <SocialShare />
+        <SocialLinks />
       )
       .toJSON()
     expect(tree).toMatchSnapshot()
