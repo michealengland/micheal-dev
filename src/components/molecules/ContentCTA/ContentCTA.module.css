@@ -51,7 +51,7 @@
   }
 
   & .content {
-    @apply text-base p-0 mb-4;
+    @apply text-lg p-0 mb-4;
 
     font-size: 1em;
     line-height: 1.6em;

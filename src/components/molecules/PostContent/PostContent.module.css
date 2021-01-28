@@ -1,4 +1,6 @@
 .postContent {
+  @apply text-lg;
+
   & .inner {
     @apply p-4 max-w-3xl mx-auto;
   }
