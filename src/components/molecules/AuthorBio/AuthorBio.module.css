@@ -9,6 +9,6 @@
   }
 
   & .content {
-    @apply mb-0 mr-4;
+    @apply m-0 mr-4;
   }
 }

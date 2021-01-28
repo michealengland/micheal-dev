@@ -8,6 +8,6 @@
   }
 
   & .content {
-    @apply text-base;
+    @apply text-lg;
   }
 }

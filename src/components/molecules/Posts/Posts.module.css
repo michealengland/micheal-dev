@@ -10,7 +10,16 @@
   }
 
   & .title {
-    @apply text-2xl mb-0 text-primary-purple2;
+    @apply text-2xl mb-0;
+
+    & a {
+      @apply text-primary-purple2 no-underline;
+
+      &:hover,
+      &:focus {
+        @apply underline text-secondary-pink;
+      }
+    }
   }
 
   & .date {
@@ -18,6 +27,6 @@
   }
 
   & .content {
-    @apply text-base;
+    @apply text-lg;
   }
 }

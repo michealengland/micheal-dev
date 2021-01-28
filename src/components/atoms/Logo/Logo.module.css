@@ -27,7 +27,7 @@
 }
 
 .logo {
-  @apply relative font-mono flex items-center content-center text-center;
+  @apply relative font-mono flex items-center content-center text-center text-white;
 
   &::after {
     @apply block absolute inset-x-0 inset-y-auto bg-nuetral-white opacity-0 mx-auto w-1;
@@ -54,7 +54,9 @@
   }
 
   & svg {
-    @apply fill-current relative w-8 h-auto;
+    @apply relative w-8 h-auto;
+
+    fill: #fff;
 
     &:first-child,
     &:nth-child(2) {
