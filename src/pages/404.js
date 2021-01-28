@@ -9,6 +9,7 @@ const NotFoundPage = () => {
         title="404 page not found"
         content="This page is missing or does not exist."
         img="./images/adrien-converse-REL986jyuX4-unsplash.jpg"
+        label="Back to Micheal.dev"
       />
     </Layout>
   )
