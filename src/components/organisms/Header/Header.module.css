@@ -1,18 +1,29 @@
 .header {
-  @apply text-nuetral-white bg-primary-purple1 p-4;
+  @apply text-nuetral-white bg-primary-purple1 py-4 px-8;
 
   & .inner {
     @apply flex items-center max-w-7xl mx-auto;
   }
 
   & .menu {
-    @apply inline-block;
+    @apply inline-block text-lg uppercase;
 
-    ul {
-      @apply m-0 list-none;
+    & ul {
+      @apply flex flex-row m-0 list-none;
 
-      li {
-        @apply m-0;
+      & li {
+        @apply m-0 mr-4;
+
+        & a {
+          &:hover,
+          &:focus {
+            @apply underline text-secondary-pink outline-none;
+          }
+        }
+
+        &:last-child {
+          @apply mr-0;
+        }
       }
     }
   }

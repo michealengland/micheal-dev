@@ -1,0 +1,30 @@
+.socialLinks {
+  @apply inline-block;
+
+  & ul {
+    @apply flex flex-nowrap flex-row;
+  }
+
+  & li {
+    @apply ml-4 text-tertiary-teal;
+  }
+
+  & a {
+    &:hover .icon,
+    &:focus .icon {
+      transform: scale(1.4, 1.4);
+    }
+  }
+
+  & .icon {
+    @apply flex items-center justify-center p-1 fill-current;
+
+    height: 2rem;
+    width: 2rem;
+    transition: 200ms linear all;
+  }
+
+  & .label {
+    @apply sr-only;
+  }
+}

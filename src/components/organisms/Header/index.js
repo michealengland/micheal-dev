@@ -1,8 +1,8 @@
 import React from 'react'
 import TextLink from '@components/atoms/TextLink'
-// import Logo from '@content/assets/me-icon.png'
 import Logo from '@components/atoms/Logo'
 import styles from './Header.module.css'
+import SocialLinks from '@components/molecules/SocialLinks'
 
 export default function Header() {
   return (
@@ -18,6 +18,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+        <SocialLinks />
       </div>
     </header>
   )
