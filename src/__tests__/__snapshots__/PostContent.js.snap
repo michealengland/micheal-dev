@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostContent renders correctly 1`] = `
+<section
+  className="postContent post-content"
+>
+  <div
+    className="inner"
+  >
+    <p>
+      Test
+    </p>
+  </div>
+</section>
+`;
