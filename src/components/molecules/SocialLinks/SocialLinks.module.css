@@ -6,12 +6,16 @@
   }
 
   & li {
-    @apply ml-4 text-tertiary-teal;
+    @apply ml-4 text-tertiary-teal list-none;
   }
 
   & a {
+    @apply no-underline;
+
     &:hover .icon,
     &:focus .icon {
+      @apply underline;
+
       transform: scale(1.4, 1.4);
     }
   }

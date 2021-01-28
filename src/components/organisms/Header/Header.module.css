@@ -1,5 +1,5 @@
 .header {
-  @apply text-nuetral-white bg-primary-purple1 py-4 px-8;
+  @apply font-sans text-nuetral-white bg-primary-purple1 py-4 px-8;
 
   & .inner {
     @apply flex items-center max-w-7xl mx-auto;
@@ -12,9 +12,11 @@
       @apply flex flex-row m-0 list-none;
 
       & li {
-        @apply m-0 mr-4;
+        @apply m-0 mr-4 list-none;
 
         & a {
+          @apply text-nuetral-white;
+
           &:hover,
           &:focus {
             @apply underline text-secondary-pink outline-none;
@@ -43,5 +45,9 @@
 
       max-width: 4.25rem;
     }
+  }
+
+  & svg {
+    fill: #fff;
   }
 }
