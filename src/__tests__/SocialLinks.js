@@ -11,4 +11,3 @@ describe('SocialLinks', () => {
     expect(tree).toMatchSnapshot()
   })
 })
-// RENAME THIS FILE
