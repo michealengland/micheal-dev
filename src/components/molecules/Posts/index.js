@@ -5,6 +5,9 @@ import TextLink from '@components/atoms/TextLink'
 import createMarkup from '@utilities/createMarkup'
 import styles from './Posts.module.css'
 
+// TODO Refactor this component with more strict props.
+// TODO Create snapshot test.
+
 export default function Posts({posts}) {
   return (
     <section className={styles.posts}>
