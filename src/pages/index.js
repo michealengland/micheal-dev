@@ -11,7 +11,7 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="Mike England"
-        description="Frontend Engineer / Designer / Motorcycle Enthusiast"
+        description="I'm a Frontend Engineer at WebDevStudios and I'm passionate about all things JavaScript."
       />
       <Hero
         title="I'm Mike England"
