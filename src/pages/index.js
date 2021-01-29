@@ -51,10 +51,10 @@ const IndexPage = () => {
         content="<p>Outside of work, I'm participating in the #100DaysOfCode challenge. During this time I've been working leveling up my JavaScript skills, building out WordPress plugins, and recreating my site with Gatsby.</p>"
       />
       <ContentCTA
-        content="Fun fact, I'm a huge fan of CodePen and love using it to create quick concepts."
-        label="View CodePen"
-        title="Find me on CodePen"
-        url="https://codepen.io/mengland/pens/"
+        content="The majority of my work is on private repos... However, that doesn't stop me from building and learning after hours on side projects."
+        label="Find me Github"
+        title="My Projects"
+        url="https://github.com/michealengland?tab=repositories"
       />
       <ContentCTA
         content="Want to discuss a project? Message me on Twitter."
