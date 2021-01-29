@@ -161,11 +161,12 @@ Array [
       <p>
         © 
         2021
-         Mike England, Built with 
+         Mike England | View on
+         
         <a
-          href="https://www.gatsbyjs.org"
+          href="https://github.com/michealengland/micheal-dev"
         >
-          Gatsby
+          Github
         </a>
       </p>
     </div>

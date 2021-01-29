@@ -16,7 +16,7 @@ export default function BlogPostTemplate({data, pageContext}) {
   return (
     <Layout>
       <SEO
-        title={post.frontmatter.title}
+        title={`${post.frontmatter.title} | Blog `}
         description={post.frontmatter.description || post.excerpt}
       />
       <PostHeader

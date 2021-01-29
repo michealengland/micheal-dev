@@ -6,8 +6,8 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <Error404
-        title="404 page not found"
-        content="This page is missing or does not exist."
+        title="404 Page Not found"
+        content="You just hit a route that doesn't exist... the sadness."
         img="/images/adrien-converse-REL986jyuX4-unsplash.jpg"
         label="Back to Micheal.dev"
       />
