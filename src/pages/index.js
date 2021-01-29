@@ -11,7 +11,7 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="Mike England"
-        description="I'm a Frontend Engineer at WebDevStudios and I'm passionate about all things JavaScript."
+        description="I'm a Frontend Engineer at WebDevStudios, and I'm passionate about all things JavaScript."
       />
       <Hero
         title="I'm Mike England"
@@ -28,7 +28,7 @@ const IndexPage = () => {
         img="/images/anas-alshanti-feXpdV001o4-unsplash.jpg"
         title="Code Skills"
         content={`
-        <p>I enjoy writing clean code and creating user experiences. Here are some of the areas I'm focused on currently.</p>
+        <p>I enjoy writing clean code and creating user experiences. Here are some of the areas I'm focused on currently:</p>
         <ul>
           <li>JavasScript</li>
           <li>Gutenberg</li>
@@ -42,13 +42,13 @@ const IndexPage = () => {
       <MediaContent
         img="/images/harpal-singh-_zKxPsGOGKg-unsplash.jpg"
         title="Design Skills"
-        content="<p>Like many front-enders I started out as a designer creating everything from branding projects to website concepts.</p>"
+        content="<p>Like many front-enders I started out as a designer, creating everything from branding projects to website concepts.</p>"
       />
       <MediaContent
         imgClipRight={true}
         img="/images/github-contributions-edited.jpg"
         title="100 Days of Code"
-        content="<p>Outside of work, I'm participating in the #100DaysOfCode challenge. During this time I've been working leveling up my JavaScript skills, building out WordPress plugins, and recreating my site with Gatsby.</p>"
+        content="<p>Outside of work, I'm participating in the #100DaysOfCode challenge. During this time I've been leveling up my JavaScript skills, building WordPress plugins, and recreating my site with Gatsby.</p>"
       />
       <ContentCTA
         content="The majority of my work is on private repos... However, that doesn't stop me from building and learning after hours on side projects."
