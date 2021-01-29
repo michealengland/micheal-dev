@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Content
         title="About Me"
         titleTag="h2"
-        content="I'm a Frontend Engineer at WebDevStudios and I'm passionate about all things JavaScript. Building awesome websites, tools, and web applications is my passion!"
+        content="I'm a Frontend Engineer at WebDevStudios, and I'm passionate about all things JavaScript. Building awesome websites, tools, and web applications is my passion!"
       />
       <MediaContent
         imgClipRight={true}
