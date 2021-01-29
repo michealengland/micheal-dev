@@ -1,5 +1,5 @@
 import React from 'react'
-// import SEO from '../components/seo'
+import SEO from '@components/atoms/SEO'
 import Layout from '@components/organisms/Layout'
 import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
@@ -10,7 +10,10 @@ export default function Blog({data}) {
 
   return (
     <Layout>
-      {/* <SEO title="All posts" /> */}
+      <SEO
+        title="Blog | Mike England"
+        description="Learn about JavaScript, React, and other platforms that I've used to build awesome projects with."
+      />
       <section>
         <PostHeader title="Blog" />
         <Posts posts={posts} />
@@ -22,21 +25,21 @@ export default function Blog({data}) {
 Blog.propTypes = {
   data: PropTypes.shape({
     allMdx: PropTypes.object
-  }),
+  })
 }
 
 export const pageQuery = graphql`
-query BlogQuery {
-  allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-    totalCount
-    nodes {
-      excerpt
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
+  query BlogQuery {
+    allMdx(sort: {fields: [frontmatter___date], order: DESC}) {
+      totalCount
+      nodes {
+        excerpt
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+        }
+        slug
       }
-      slug
     }
   }
-}
 `
