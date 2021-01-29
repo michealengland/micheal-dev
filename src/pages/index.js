@@ -57,9 +57,9 @@ const IndexPage = () => {
         url="https://github.com/michealengland?tab=repositories"
       />
       <ContentCTA
-        content="Want to discuss a project? Message me on Twitter."
+        content="Follow me on Twitter! I enjoy sharing code tips and projects that I'm working on."
         img="./images/adrien-converse-kCrrUx7US04-unsplash.jpg"
-        label="Message"
+        label="@mikelikethebike"
         title="Let's Connect"
         url="https://twitter.com/mikelikethebike"
       />
