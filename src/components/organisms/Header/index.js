@@ -18,7 +18,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <SocialLinks />
+        <SocialLinks className={styles.socialLinks} />
       </div>
     </header>
   )
