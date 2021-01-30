@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from './SocialLinks.module.css'
 import Icon from '@components/atoms/Icon'
+import cn from 'classnames'
+import PropTypes from 'prop-types'
 
-export default function SocialLinks() {
+export default function SocialLinks({className}) {
   const socialAccounts = [
     {
       icon: 'github',
@@ -18,13 +20,17 @@ export default function SocialLinks() {
       icon: 'twitter',
       label: 'Twitter',
       url: 'https://twitter.com/mikelikethebike'
-    },
+    }
   ]
 
   return (
-    <nav className={styles.socialLinks} role="navigation" aria-label="social links">
+    <nav
+      className={cn(styles.socialLinks, className)}
+      role="navigation"
+      aria-label="social links"
+    >
       <ul>
-        { socialAccounts.map((account, index) => {
+        {socialAccounts.map((account, index) => {
           const {icon, label, url} = account
 
           return (
@@ -35,8 +41,12 @@ export default function SocialLinks() {
               </a>
             </li>
           )
-        }) }
+        })}
       </ul>
     </nav>
   )
+}
+
+SocialLinks.propTypes = {
+  className: PropTypes.string
 }
