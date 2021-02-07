@@ -46,7 +46,7 @@
     }
 
     & svg {
-      @scren sm {
+      @screen sm {
         &:first-child {
           transform: rotate(-90deg) translate(0, -0.75rem);
         }
