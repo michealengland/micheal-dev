@@ -31,10 +31,11 @@ const IndexPage = () => {
         <p>I enjoy writing clean code and creating user experiences. Here are some of the areas I'm focused on currently:</p>
         <ul>
           <li>JavasScript</li>
-          <li>Gutenberg</li>
+          <li>Gutenberg Blocks</li>
           <li>React</li>
           <li>Webpack</li>
           <li>Gatsby</li>
+          <li>Next.js</li>
           <li>Jest (WIP)</li>
         </ul>
         `}
@@ -42,18 +43,20 @@ const IndexPage = () => {
       <MediaContent
         img="/images/harpal-singh-_zKxPsGOGKg-unsplash.jpg"
         title="Design Skills"
-        content="<p>Like many front-enders I started out as a designer, creating everything from branding projects to website concepts.</p>"
+        content="<p>Like many front-enders I started out as a designer, creating everything from branding projects to website concepts. Taking inspiration from my experiences designing projects and apply that to components and user interfaces.</p>"
       />
       <MediaContent
         imgClipRight={true}
         img="/images/github-contributions-edited.jpg"
-        title="100 Days of Code"
-        content="<p>Outside of work, I'm participating in the #100DaysOfCode challenge. During this time I've been leveling up my JavaScript skills, building WordPress plugins, and recreating my site with Gatsby.</p>"
+        title="#100DaysOfCode"
+        content="<p>Whether you're a seasoned engineer or new to development, #100DaysOfCode is a fun and exciting way to level up. Currently, I'm on my second round, and I'm focused on making React applications, unit testing with Jest, and diving deeper in advanced JavaScript techniques.</p>"
       />
       <ContentCTA
-        content="The majority of my work is on private repos... However, that doesn't stop me from building and learning after hours on side projects."
-        label="Find me Github"
-        title="My Projects"
+        content={
+          'Being an engineer is awesome! One of the best perks is solving code challenges and building out the "What if...?" ideas. While most of my work is on private repos, I love to share the side projects and ideas.'
+        }
+        label="View My Github"
+        title="Checkout My Code"
         url="https://github.com/michealengland?tab=repositories"
       />
       <ContentCTA

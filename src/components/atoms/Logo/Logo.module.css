@@ -27,28 +27,32 @@
 }
 
 .logo {
-  @apply relative font-mono flex items-center content-center text-center text-white;
+  @apply relative font-mono flex items-center justify-center text-center text-white;
 
-  &::after {
-    @apply block absolute inset-x-0 inset-y-auto bg-nuetral-white opacity-0 mx-auto w-1;
+  @screen sm {
+    &::after {
+      @apply block absolute inset-x-0 inset-y-auto bg-nuetral-white opacity-0 mx-auto w-1;
 
-    content: '';
-    height: 2.75rem;
-    transform: rotate(18deg);
-    transition: 200ms linear all;
+      content: '';
+      height: 2.75rem;
+      transform: rotate(18deg);
+      transition: 200ms linear all;
+    }
   }
 
   &:hover {
     &::after {
-      @apply opacity-100;
+      @apply sm:opacity-100;
     }
 
     & svg {
-      &:first-child {
-        transform: rotate(-90deg) translate(0, -0.75rem);
-      }
-      &:nth-child(2) {
-        transform: rotate(90deg) translate(0, -0.75rem);
+      @screen sm {
+        &:first-child {
+          transform: rotate(-90deg) translate(0, -0.75rem);
+        }
+        &:nth-child(2) {
+          transform: rotate(90deg) translate(0, -0.75rem);
+        }
       }
     }
   }

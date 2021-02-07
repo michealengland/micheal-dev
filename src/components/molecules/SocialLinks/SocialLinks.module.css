@@ -6,7 +6,11 @@
   }
 
   & li {
-    @apply ml-4 text-tertiary-teal list-none;
+    @apply mr-2 text-tertiary-teal list-none;
+
+    &:last-child {
+      @apply mr-0;
+    }
   }
 
   & a {
@@ -23,9 +27,14 @@
   & .icon {
     @apply flex items-center justify-center p-1 fill-current;
 
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
     transition: 200ms linear all;
+
+    @screen sm {
+      height: 2rem;
+      width: 2rem;
+    }
   }
 
   & .label {

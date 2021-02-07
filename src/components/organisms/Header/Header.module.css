@@ -1,12 +1,28 @@
 .header {
-  @apply font-sans text-nuetral-white bg-primary-purple1 py-4 px-8;
+  @apply font-sans text-nuetral-white bg-primary-purple1 py-2 px-4 sm:py-4 sm:px-8;
 
   & .inner {
-    @apply flex items-center max-w-7xl mx-auto;
+    @apply flex flex-wrap sm:flex-nowrap items-center max-w-7xl mx-auto;
+  }
+
+  & .logo {
+    @apply inline-block font-normal mr-auto uppercase mb-1;
+
+    flex: 1 0 100%;
+    letter-spacing: 1px;
+
+    @screen sm {
+      flex: 0 1 auto;
+    }
+
+    &:hover,
+    &:focus {
+      @apply opacity-70 transition-all;
+    }
   }
 
   & .menu {
-    @apply inline-block text-lg uppercase;
+    @apply inline-block text-lg uppercase mr-auto sm:mr-0;
 
     & ul {
       @apply flex flex-row m-0 list-none;
@@ -30,24 +46,15 @@
     }
   }
 
-  & .logo {
-    @apply inline-block text-3xl font-normal mr-auto uppercase;
-
-    letter-spacing: 1px;
-
-    &:hover,
-    &:focus {
-      @apply opacity-70 transition-all;
-    }
-
-    & img {
-      @apply block;
-
-      max-width: 4.25rem;
-    }
-  }
-
   & svg {
     fill: #fff;
+  }
+
+  & .socialLinks {
+    @apply flex justify-between;
+
+    @screen sm {
+      @apply ml-4;
+    }
   }
 }
