@@ -7,18 +7,20 @@ import cn from 'classnames'
 
 export default function MediaContent({content, img, imgAlt, layout, title, titleTag}) {
   return (
-    <section className={cn(styles.mediaContent, layout)}>
-      {(title || content) &&
-        <div className={styles.content}>
-          {title && <Heading className={styles.title} tag={titleTag}>{title}</Heading>}
-          {content && <div dangerouslySetInnerHTML={ createMarkup(content) } />}
-        </div>
-      }
-      {img &&
-        <figure className={styles.media}>
-          <img src={img} alt={imgAlt} />
-        </figure>
-      }
+    <section className={cn(styles.mediaContent, styles[layout])}>
+      <div className={styles.inner}>
+        {(title || content) &&
+          <div className={styles.content}>
+            {title && <Heading className={styles.title} tag={titleTag}>{title}</Heading>}
+            {content && <div dangerouslySetInnerHTML={ createMarkup(content) } />}
+          </div>
+        }
+        {img &&
+          <figure className={styles.media}>
+            <img src={img} alt={imgAlt} />
+          </figure>
+        }
+      </div>
     </section>
   )
 }
