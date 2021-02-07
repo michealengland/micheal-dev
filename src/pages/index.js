@@ -18,13 +18,15 @@ const IndexPage = () => {
         content="Frontend Engineer / Designer / Motorcycle Enthusiast"
         img="/images/adrien-converse-REL986jyuX4-unsplash.jpg"
       />
-      <Content
+      <MediaContent
+        layout="octagonLeft"
+        img="/images/mike-england.jpg"
         title="About Me"
         titleTag="h2"
-        content="I'm a Frontend Engineer at WebDevStudios, and I'm passionate about all things JavaScript. Building awesome websites, tools, and web applications is my passion!"
+        content="<p>I'm a Frontend Engineer at WebDevStudios, and I'm passionate about all things JavaScript. Building awesome websites, tools, and web applications is my passion!</p>"
       />
       <MediaContent
-        imgClipRight={true}
+        layout="clipLeft"
         img="/images/anas-alshanti-feXpdV001o4-unsplash.jpg"
         title="Code Skills"
         content={`
@@ -40,12 +42,13 @@ const IndexPage = () => {
         `}
       />
       <MediaContent
+        layout="clipRight"
         img="/images/harpal-singh-_zKxPsGOGKg-unsplash.jpg"
         title="Design Skills"
         content="<p>Like many front-enders I started out as a designer, creating everything from branding projects to website concepts.</p>"
       />
       <MediaContent
-        imgClipRight={true}
+        layout="clipLeft"
         img="/images/github-contributions-edited.jpg"
         title="100 Days of Code"
         content="<p>Outside of work, I'm participating in the #100DaysOfCode challenge. During this time I've been leveling up my JavaScript skills, building WordPress plugins, and recreating my site with Gatsby.</p>"
