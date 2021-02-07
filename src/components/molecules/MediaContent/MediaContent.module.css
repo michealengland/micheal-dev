@@ -21,18 +21,15 @@
     }
   }
 
-  @media screen and (min-width: 48em) {
-    @apply grid;
+  & .inner {
+    @apply mx-auto;
 
-    grid-template-areas: 'media-text-content media-text-media';
-    grid-template-columns: auto 50%;
-  }
+    @media screen and (min-width: 48em) {
+      @apply grid;
 
-  & .content {
-    @apply p-8 md:pl-16 lg:pl-40;
-
-    grid-area: media-text-content;
-    word-break: break-word;
+      grid-template-areas: 'media-text-content media-text-media';
+      grid-template-columns: auto 50%;
+    }
   }
 
   & .media {
@@ -44,17 +41,69 @@
     margin-bottom: -1px;
     height: calc(100% + 1px);
 
+    & img {
+      @apply block h-full m-0 object-cover w-full;
+    }
+  }
+
+  /* Clipped Image Layouts */
+  &.clipLeft,
+  &.clipRight {
+    & .content {
+      @apply p-8 md:pl-16 lg:pl-40;
+
+      grid-area: media-text-content;
+      word-break: break-word;
+    }
+  }
+
+  &.clipLeft {
     @screen md {
-      &.clipLeft {
+      &.clipLeft .media {
+        /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
       }
-      &.clipRight {
+    }
+  }
+
+  &.clipRight {
+    @screen md {
+      &.clipRight .media {
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
       }
     }
+  }
 
-    & img {
-      @apply block h-full m-0 object-cover w-full;
+  /* Octagon Layouts */
+  &.octagonLeft,
+  &.octagonRight {
+    @apply p-8 md:p-14;
+
+    & .inner {
+      @apply flex flex-row-reverse items-center justify-center max-w-2xl;
+    }
+
+    & .title {
+      @apply text-primary-purple2 font-thin text-5xl md:text-6xl lg:text-7xl mb-4;
+    }
+
+    & .content {
+      @apply text-primary-purple1 font-thin text-lg;
+    }
+  }
+
+  &.octagonLeft {
+    & .media {
+      @apply inline-block overflow-hidden max-w-xs rounded bg-primary-purple2 mr-4;
+
+      & img {
+        min-height: 200px;
+        width: 100%;
+
+        clip-path: path(
+          'M97,2.77350269 L163.60254,41.2264973 C169.790562,44.7991532 173.60254,51.4016936 173.60254,58.5470054 L173.60254,135.452995 C173.60254,142.598306 169.790562,149.200847 163.60254,152.773503 L97,191.226497 C90.8119785,194.799153 83.1880215,194.799153 77,191.226497 L10.3974596,152.773503 C4.20943809,149.200847 0.397459622,142.598306 0.397459622,135.452995 L0.397459622,58.5470054 C0.397459622,51.4016936 4.20943809,44.7991532 10.3974596,41.2264973 L77,2.77350269 C83.1880215,-0.799153207 90.8119785,-0.799153207 97,2.77350269 Z'
+        );
+      }
     }
   }
 }
