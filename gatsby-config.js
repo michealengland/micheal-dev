@@ -1,3 +1,6 @@
+// import path from 'path'
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: 'Micheal England',
@@ -83,9 +86,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-vscode',
             options: {
-              // theme: 'Abyss' // Or install your favorite theme from GitHub
-              theme: 'SynthWave \'84', // From package.json: contributes.themes[0].label
-              extensions: ['synthwave-vscode'] // From package.json: name
+              theme: 'Dracula Pro',
+              extensions: [path.resolve('./static/dracula-pro.vsix')],
             }
           }
         ]
