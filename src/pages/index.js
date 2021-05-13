@@ -11,17 +11,17 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="Mike England"
-        description="I'm a Frontend Engineer at WebDevStudios, and I'm passionate about all things JavaScript."
+        description="I'm a Front End Engineer at WebDevStudios, and I'm passionate about all things JavaScript."
       />
       <Hero
         title="I'm Mike England"
-        content="Frontend Engineer / Designer / Motorcycle Enthusiast"
+        content="Front End Engineer / Designer / Motorcycle Enthusiast"
         img="/images/adrien-converse-REL986jyuX4-unsplash.jpg"
       />
       <Content
         title="About Me"
         titleTag="h2"
-        content="I'm a Frontend Engineer at WebDevStudios, and I'm passionate about all things JavaScript. Building awesome websites, tools, and web applications is my passion!"
+        content="I'm a Front End Engineer at WebDevStudios, and I'm passionate about all things JavaScript. Building awesome websites, tools, and web applications is my passion!"
       />
       <MediaContent
         imgClipRight={true}
@@ -52,11 +52,9 @@ const IndexPage = () => {
         content="<p>Whether you're a seasoned engineer or new to development, #100DaysOfCode is a fun and exciting way to level up. Currently, I'm on my second round, and I'm focused on making React applications, unit testing with Jest, and diving deeper in advanced JavaScript techniques.</p>"
       />
       <ContentCTA
-        content={
-          'Being an engineer is awesome! One of the best perks is solving code challenges and building out the "What if...?" ideas. While most of my work is on private repos, I love to share the side projects and ideas.'
-        }
-        label="View My Github"
-        title="Checkout My Code"
+        content={'Being an engineer is awesome! Solving code challenges and building out the "What if..." ideas are what I the enjoy most. In my free time, I love to share open source side projects and ideas that I\'m working on.'}
+        label="View My GitHub Profile"
+        title="Checkout some of my work"
         url="https://github.com/michealengland?tab=repositories"
       />
       <ContentCTA

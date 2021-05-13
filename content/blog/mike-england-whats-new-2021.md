@@ -4,9 +4,9 @@ date: '2021-04-06T12:51:30Z'
 description: 'Thoughts and career goals for 2021'
 ---
 
-# Mike England, What's new in 2021
+# What's new in 2021
 
-Back in October of 2020, I decided it was time to rebrand myself as a JavaScript focused engineer. I've been in this odd place where I no longer fall inline with the traditional role of a Frontend Engineer nor am I Backend Engineer. As a result, it's made my career path moving forward very confusing at times and caused me to re-evaluate what my goals.
+Back in October of 2020, I decided it was time to rebrand myself as a JavaScript focused engineer. I've been in this odd place where I no longer fall inline with the traditional role of a Front End Engineer nor am I Backend Engineer. As a result, it's made my career path moving forward very confusing at times and caused me to re-evaluate what my goals.
 
 ## Taking a deep look at what I'm interested in
 
@@ -31,8 +31,8 @@ I often ponder the question "Where do you see yourself in five years?" and unfor
 
 ## Working towards my goals
 
-So far 2021 is off to a good start. I recently overhauling [micheal.dev](https://micheal.dev) so that I have a better platform to showcase my knowledge and career journey. Next, I turbo-charged my [Github profile](https://github.com/michealengland) with some of details about my side projects that I'm working on.
+So far 2021 is off to a good start, I recently overhauling [micheal.dev](https://micheal.dev) so that I have a better platform to showcase my knowledge and experiences. Next, I turbo-charged my [Github profile](https://github.com/michealengland) with some of details about my side projects that I'm working on.
 
 ### What's Next
 
-Currently, I'm focused on deep diving into unit testing with Jest and learning React much deeper. I've been re-working through the [Test JavaScript](https://testingjavascript.com/) course that I started in 2020. I'm also working on new blog material around what I'm learning.
+Currently, I'm focused on deep diving into unit testing with Jest and React deeply. I'm re-working through the [Test JavaScript](https://testingjavascript.com/) course that I started in 2020. Along the way, I'm working on new blog material and creating detailed code sandboxes around what I'm learning.
