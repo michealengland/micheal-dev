@@ -32,7 +32,7 @@ export default function Posts({posts}) {
             </Heading>
               }
               {date && <small className={styles.date}>{date}</small>}
-              {excerpt && <p className={styles.content} dangerouslySetInnerHTML={createMarkup(excerpt)} />}
+              {excerpt && <p className={styles.content}>{excerpt}</p>}
             </article>
           )
         })}
