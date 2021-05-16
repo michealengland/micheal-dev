@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 import PropTypes from 'prop-types'
 
 export default function TextLink({children, to, activeClassName, partiallyActive, ...other}) {
-  const internal = /^\/(?!\/)/.test(to)
+  const internal = !! to
 
   // Use Gatsby Link for internal links, and <a> for others
   if (internal) {
