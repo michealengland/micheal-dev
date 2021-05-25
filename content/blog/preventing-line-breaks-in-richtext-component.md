@@ -16,7 +16,7 @@ If you've checked out the documentation around the RichText component, you may h
 
 Taking a look at [onSplit](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/rich-text#onsplit-value-string--function) property for the RichText component we can override the default behavior for when a split should occur (Returns count as a split). By returning a function that does nothing, when the return key is used no changes will occur. However, we still need to add one more change.
 
-> Note that you also need to provide onReplace in order for this to take any effect.
+> UPDATE 5-25-21: The `multiline` prop must not used or set to false for the return disable to work.
 
 Due to the codependent relationship of `onSplit` and `onReplace` we must include the [onReplace](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/rich-text#onreplace-blocks-array--function) property and pass it an empty function as well.
 
