@@ -68,7 +68,6 @@ Show a list or recently run workflows. This gives a good overview of pipeline he
 ### Custom Searches
 
 You can make custom search filters similar to how you use search on GitHub.
-![Screen Shot 2021-08-18 at 9.25.07 PM.png](/assets/Screen%20Shot%202021-08-18%20at%209.25.07%20PM.png)
 ex: `gh pr list --search "is:pr is:open button"`
 
 ## Creating Custom Aliases
