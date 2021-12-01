@@ -5,7 +5,7 @@ tags: []
 ---
 
 # Writing Better Pull Requests
-Over the last year, I've become a lot more thoughtful about the code I write and how work on features. A tremendous soft skill that I've been working on is optimizing how I write my pull requests. This skill not only makes your code more approachable, but it helps others become more knowledgeable about the code base even if they were not involved directly.
+Over the last year, I've become a lot more thoughtful about the code I write and how to work on features. A tremendous soft skill that I've been working on is optimizing how I write my pull requests. This skill not only makes your code more approachable, but it helps others become more knowledgeable about the code base even if they were not involved directly.
 
 ## Recognizing Difficult PRs
 The path to writing better PRs starts with being able recognize the difficult ones. Here are some of the key identifiers I look for:
@@ -62,7 +62,7 @@ Utilizing small commits with meaningful descriptions can be incredibly helpful f
 - Small commits make the history easy to alter with `rebase` or `cherry-picking`
 - Detailed commit descriptions serve as resource for explaining code complex choice in the PR as well as commit history
 
-_To further aid in writing good commits, I often utilize a full commits over commit messages ex: `git commit -m "message"` _
+_I recommend writing full commits using `git commit` instead of the message inline `git commit -m "message"`. To make this easier, you can [write your commit message using your code editor of choice](https://salferrarello.com/git-commit-message-editor/) and use [git preview changes in commit message](https://salferrarello.com/git-preview-changes-in-commit-message/). These two features combined will make aid greatly in writing clean and focused commits!._
 
 ### Make sure your PR is focused
 The smaller a PR is, the easier it will be for a reviewer to stay focused. Consider the amount of thought needed for 1 line change PR and a 50+ file PR. Which one are you more likely to review immediately? Which one are you less likely overlook an unwanted code change or bug? Keeping a PR streamlined only to specific goals is an art form which will play a huge role in getting reviewers onboarded. If there are features that can be broken out into smaller PRs, the time in saved reviewing can be worth it.
