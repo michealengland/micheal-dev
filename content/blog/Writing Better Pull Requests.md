@@ -1,6 +1,6 @@
 ---
 title: Writing Better Pull Requests
-date: '2021-11-30-T17:00:00Z'
+date: '2021-12-01-T17:00:00Z'
 tags: []
 ---
 
