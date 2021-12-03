@@ -4,7 +4,6 @@ date: 2021-12-01T17:00:00Z
 tags: []
 ---
 
-# Writing Better Pull Requests
 Over the last year, I've become a lot more thoughtful about the code I write and how to work on features. A tremendous soft skill that I've been working on is optimizing how I write my pull requests. This skill not only makes your code more approachable, but it helps others become more knowledgeable about the code base even if they were not involved directly.
 
 ## Recognizing Difficult PRs
