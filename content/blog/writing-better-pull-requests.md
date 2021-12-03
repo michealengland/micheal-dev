@@ -70,7 +70,7 @@ Utilizing small commits with meaningful descriptions can be incredibly helpful f
 - Small commits make the history easy to alter with `rebase` or `cherry-picking`
 - Detailed commit descriptions serve as resource for explaining code complex choice in the PR as well as commit history
 
-_I recommend writing full commits using `git commit` instead of the message inline `git commit -m "message"`. To make this easier, you can [write your commit message using your code editor of choice](https://salferrarello.com/git-commit-message-editor/) and use [git preview changes in commit message](https://salferrarello.com/git-preview-changes-in-commit-message/). These two features combined will make aid greatly in writing clean and focused commits!._
+_I recommend writing full commits using `git commit` instead of the message inline `git commit -m "message"`. To make this easier, you can [write your commit message using your code editor of choice](https://salferrarello.com/git-commit-message-editor/) and use [git preview changes in commit message](https://salferrarello.com/git-preview-changes-in-commit-message/). These two features combined will aid greatly in writing clean and focused commits!._
 
 ### Make sure your PR is focused
 
