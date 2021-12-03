@@ -4,17 +4,17 @@ date: 2021-12-01T17:00:00Z
 tags: []
 ---
 
-Over the last year, I've become more thoughtful about the code I write and how quickly it gets merged. Wanting to improve on this process, I re-evaluated some of my soft skills such as how I write pull requests. Instead of focusing on how fast I could write, I worked towards making the review process easier. The goal of a PR is to introduce a change, and this is my guide to making a good first impression.
+Over the last year, I've become more thoughtful about the code I write and how quickly it gets merged. Wanting to improve on this process, I re-evaluated some of my soft skills such as how I write pull requests. Instead of focusing on how fast I could write, I worked towards making the review process easier. The goal of a PR is to introduce a change and this is my guide to making a good first impression.
 
 ## Recognizing Difficult PRs
-The path to writing better PRs starts with being able recognize the difficult ones. Here are some of the key identifiers I look for:
+The path to writing better PRs starts with being able recognize the difficult ones. Here a few of the key identifiers I look for:
 
 - Overwhelming amounts of changes
 - Little to no documentation
 - Large commits with many changes
 - Poor commit messages
 
-## Advantages of a well written PRs
+## Advantages of a well written PR
 A well written PR will impact the past, present, and future codebase that your project utilizes. Here are some of the advantages of a well written PR.
 
 - Reduce time for reviews! Your reviewers will thank you for making their lives easier
@@ -46,9 +46,9 @@ If additional setup is required such as setting up an API key, or modifying the 
 
 ### How to Test Steps
 
-Providing easy to follow along testing steps will make your code changes easier to verify for reviewers of all skill levels and familiarity. It's important to remember testing steps serves as documentation for what you **did** and **did not** test for. This can be helpful for highlighting edge-cases you didn't consider.
+Providing easy to follow along testing steps will make your code changes easier to verify for reviewers of all skill levels and familiarity. It's important to remember testing steps serve as documentation for what you **did** and **did not** test for. This can be helpful for highlighting edge-cases you didn't consider.
 
-_I try to write testing steps while verifying the PR right before I set to "ready for review". I also like to include additional resources such as a test branch, images, videos, and gifs as needed._
+_I try to write testing steps while verifying the PR right before I set to "ready for review". Also, I like to include additional resources such as a test branch, images, videos, and gifs as needed._
 
 ### Screen Captures and Supporting Visuals
 
@@ -74,7 +74,7 @@ _I recommend writing full commits using `git commit` instead of the message inli
 
 ### Make sure your PR is focused
 
-The smaller a PR is, the easier it will be for a reviewer to stay focused. Consider the amount of thought needed for 1 line change PR and a 50+ file PR. Which one are you more likely to review immediately? Which one are you less likely overlook an unwanted code change or bug? Keeping a PR streamlined only to specific goals is an art form which will play a huge role in getting reviewers onboarded. If there are features that can be broken out into smaller PRs, the time in saved reviewing can be worth it.
+The smaller a PR is, the easier it will be for a reviewer to stay focused. Consider the amount of thought needed for 1 line change PR and a 50+ file PR. Which one are you more likely to review immediately? Which one are you less likely overlook an unwanted code change or bug? Keeping a PR streamlined only to specific goals is an art form which will play a huge role in keeping reviewers focused. If there are features that can be broken out into smaller PRs, the time saved reviewing can be worth it.
 
 _I prefer to break up large PRs by using a primary feature branch and then merging much smaller PRs into it. Once all of the pieces have been merged, the overall approval is much easier since we trust the code up to this point. Previous PRs are also great resources for documenting the changes on the large PR._
 
@@ -86,4 +86,4 @@ _I prefer to break up large PRs by using a primary feature branch and then mergi
 - Always re-read and verify the testing steps
 - Don't assume! Use a language that speaks to your audience and their skill level
 
-I hope you found this article helpful! The steps outlined here have greatly improved how quickly my PRs hangout reviewed and approved.
+I hope you found this article helpful! The steps outlined here have greatly improved how quickly my PRs get reviewed and approved.
