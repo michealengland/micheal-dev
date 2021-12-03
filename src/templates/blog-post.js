@@ -8,6 +8,7 @@ import SEO from '@components/atoms/SEO'
 import PostContent from '@components/molecules/PostContent'
 import PostHeader from '@components/molecules/PostHeader'
 import PostNavigation from '@components/molecules/PostNavigation'
+import formatBlogDate from '@utilities/formatBlogDate'
 
 export default function BlogPostTemplate({data, pageContext}) {
   const post = data.mdx
@@ -21,7 +22,7 @@ export default function BlogPostTemplate({data, pageContext}) {
       />
       <PostHeader
         title={post.frontmatter.title}
-        content={post.frontmatter.date}
+        content={formatBlogDate(post.frontmatter.date)}
       />
       <PostContent>
         <MDXRenderer>{post.body}</MDXRenderer>
