@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Heading from '@components/atoms/Heading'
 import TextLink from '@components/atoms/TextLink'
 import styles from './Posts.module.css'
+import formatBlogDate from '@utilities/formatBlogDate'
 
 // TODO Refactor this component with more strict props.
 // TODO Create snapshot test.
@@ -30,7 +31,7 @@ export default function Posts({posts}) {
                   </TextLink>
                 </Heading>
               }
-              {date && <small className={styles.date}>{date}</small>}
+              {date && <small className={styles.date}>{formatBlogDate(date)}</small>}
               {excerpt && <p className={styles.content}>{excerpt}</p>}
             </article>
           )

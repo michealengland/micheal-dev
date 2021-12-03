@@ -1,7 +1,7 @@
 ---
 title: Mike England, What's new in 2021
-date: '2021-04-06T12:51:30Z'
-description: 'Thoughts and career goals for 2021'
+date: 2021-04-06T12:51:30Z
+description: Thoughts and career goals for 2021
 ---
 
 # What's new in 2021

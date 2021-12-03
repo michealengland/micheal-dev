@@ -1,6 +1,6 @@
 ---
 title: Preventing line break elements in the RichText component
-date: '2021-05-13T17:00:00Z'
+date: 2021-05-13T17:00:00Z
 tags: []
 ---
 
@@ -18,13 +18,13 @@ Taking a look at [onSplit](https://github.com/WordPress/gutenberg/tree/trunk/pac
 
 Due to the codependent relationship of `onSplit` and `onReplace` we must include the [onReplace](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components/rich-text#onreplace-blocks-array--function) property and pass it an empty function as well.
 
-*UPDATE 5-25-21: The `multiline` prop on the RichText component must be set to `false` for this feature to work. The `multiline` prop defaults to `false` so it's not explicitly required. Any value other than `false` will cause the return disable not to work.*
+_UPDATE 5-25-21: The `multiline` prop on the RichText component must be set to `false` for this feature to work. The `multiline` prop defaults to `false` so it's not explicitly required. Any value other than `false` will cause the return disable not to work._
 
 ```js
 <RichText
   multiline={false} // Not required, this is the default value.
-  onReplace={()=>{}}
-  onSplit={()=>{}}
+  onReplace={() => {}}
+  onSplit={() => {}}
 />
 ```
 

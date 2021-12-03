@@ -1,6 +1,6 @@
 ---
 title: Learning the GitHub CLI
-date: '2021-08-16T12:00:00Z'
+date: 2021-08-16T12:00:00Z
 tags: []
 ---
 
