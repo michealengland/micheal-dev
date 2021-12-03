@@ -4,7 +4,7 @@ date: 2021-12-01T17:00:00Z
 tags: []
 ---
 
-Over the last year, I've become a lot more thoughtful about the code I write and how to work on features. A tremendous soft skill that I've been working on is optimizing how I write my pull requests. This skill not only makes your code more approachable, but it helps others become more knowledgeable about the code base even if they were not involved directly.
+Over the last year, I've become more thoughtful about the code I write and how quickly it gets merged. Wanting to improve on this process, I re-evaluated some of my soft skills such as how I write pull requests. Instead of focusing on fast I could write, I worked toward making the review process easier. The role of a PR is to introduce a change, and this is my guide to making a good first impression.
 
 ## Recognizing Difficult PRs
 The path to writing better PRs starts with being able recognize the difficult ones. Here are some of the key identifiers I look for:
@@ -25,7 +25,8 @@ A well written PR will impact the past, present, and future codebase that your p
 - A great resource when writing documentation
 
 ## PR Writing Checklist
-Here are some of the features I make sure to include when writing every PR. Over time these become a habit and the time investment needed is much less.
+
+Through trial and error, I've formed a list of what works best for my PR writing process. I highly recommend trying each of these areas out and see what works best for your workflow.
 
 ### Descriptive Titles
 
@@ -47,7 +48,7 @@ If additional setup is required such as setting up an API key, or modifying the 
 
 Providing easy to follow along testing steps will make your code changes easier to verify for reviewers of all skill levels and familiarity. It's important to remember testing steps serves as documentation for what you **did** and **did not** test for. This can be helpful for highlighting edge-cases you didn't consider.
 
-_I typically write testing steps as I'm verify the before setting a PR as "ready for review". I also like to include additional resources such as a test branch, images, videos, and gifs as needed._
+_I try to write testing steps while verifying the PR right before I set to "ready for review". I also like to include additional resources such as a test branch, images, videos, and gifs as needed._
 
 ### Screen Captures and Supporting Visuals
 
@@ -59,7 +60,7 @@ _I frequently share before and after screen captures with a brief description wh
 
 Using appropriate headings, dividers, and other content components to reduce reader fatigue.
 
-_I typically go for skim-ability. The more obvious the structure, the quicker the reviewer can locate what t they need to reference while testing._
+_I typically go for better skim-ability. The more obvious the structure, the quicker the reviewer can locate what they need to reference while testing._
 
 ### Small Commits
 
@@ -80,9 +81,9 @@ _I prefer to break up large PRs by using a primary feature branch and then mergi
 ### Don't forget the little things
 
 - Check spelling and grammar, write PRs in a program with spellcheck if needed
-- Use formatting elements such as **bold**, _italic_, ~~strike through~~, and `backticks` etc, ...
+- Use formatting elements such as **bold**, _italic_, ~~strike through~~, and `backticks` etc...
 - Add comments on the code lines if needed to explain a decision or ask questions
 - Always re-read and verify the testing steps
 - Don't assume! Use a language that speaks to your audience and their skill level
 
-I hope you found this helpful, as following these steps has greatly reduced the quality and amount of time my PRs hangout before they get reviewed.
+I hope you found this article helpful! The steps outlined here have greatly improved how quickly my PRs hangout reviewed and approved.
