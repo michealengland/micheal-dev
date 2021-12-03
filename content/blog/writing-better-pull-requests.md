@@ -4,7 +4,7 @@ date: 2021-12-01T17:00:00Z
 tags: []
 ---
 
-Over the last year, I've become more thoughtful about the code I write and how quickly it gets merged. Wanting to improve on this process, I re-evaluated some of my soft skills such as how I write pull requests. Instead of focusing on fast I could write, I worked toward making the review process easier. The role of a PR is to introduce a change, and this is my guide to making a good first impression.
+Over the last year, I've become more thoughtful about the code I write and how quickly it gets merged. Wanting to improve on this process, I re-evaluated some of my soft skills such as how I write pull requests. Instead of focusing on how fast I could write, I worked towards making the review process easier. The goal of a PR is to introduce a change, and this is my guide to making a good first impression.
 
 ## Recognizing Difficult PRs
 The path to writing better PRs starts with being able recognize the difficult ones. Here are some of the key identifiers I look for:
