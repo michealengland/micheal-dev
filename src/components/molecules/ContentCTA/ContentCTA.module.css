@@ -39,11 +39,7 @@
   }
 
   & .inner {
-    @apply relative m-0 mx-auto max-w-2xl py-12 px-5 w-full z-1;
-
-    @screen lg {
-      @apply px-8;
-    }
+    @apply relative m-0 mx-auto max-w-2xl py-12 px-5 w-full z-1 lg:px-8;
   }
 
   & .title {

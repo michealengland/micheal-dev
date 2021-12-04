@@ -51,10 +51,6 @@
   }
 
   & .socialLinks {
-    @apply flex justify-between;
-
-    @screen sm {
-      @apply ml-4;
-    }
+    @apply flex justify-between sm:ml-4;
   }
 }
