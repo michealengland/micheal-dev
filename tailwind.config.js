@@ -8,6 +8,7 @@
  * @see fontSize defaults {@link https://tailwindcss.com/docs/font-size}
  */
 module.exports = {
+  mode: 'jit',
   purge: {
     content: [
       './components/**/*.{js,ts,jsx,tsx,mdx}',
