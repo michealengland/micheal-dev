@@ -1,5 +1,5 @@
 .mediaContent {
-  @apply text-primary-purple1 items-center;
+  @apply text-primary-purple1 items-center md:grid;
 
   & .title {
     @apply text-primary-purple2  text-4xl lg:text-5xl font-normal mb-4;
@@ -21,9 +21,7 @@
     }
   }
 
-  @media screen and (min-width: 48em) {
-    @apply grid;
-
+  @screen md {
     grid-template-areas: 'media-text-content media-text-media';
     grid-template-columns: auto 50%;
   }
