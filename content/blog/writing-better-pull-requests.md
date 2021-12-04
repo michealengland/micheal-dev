@@ -7,6 +7,7 @@ tags: []
 Over the last year, I've become more thoughtful about the code I write and how quickly it gets merged. Wanting to improve on this process, I re-evaluated some of my soft skills such as how I write pull requests. Instead of focusing on how fast I could write, I worked towards making the review process easier. The goal of a PR is to introduce a change and this is my guide to making a good first impression.
 
 ## Recognizing Difficult PRs
+
 The path to writing better PRs starts with being able recognize the difficult ones. Here a few of the key identifiers I look for:
 
 - Overwhelming amounts of changes
@@ -15,6 +16,7 @@ The path to writing better PRs starts with being able recognize the difficult on
 - Poor commit messages
 
 ## Advantages of a well written PR
+
 A well written PR will impact the past, present, and future codebase that your project utilizes. Here are some of the advantages of a well written PR.
 
 - Reduce time for reviews! Your reviewers will thank you for making their lives easier
@@ -48,19 +50,19 @@ If additional setup is required such as setting up an API key, or modifying the 
 
 Providing easy to follow along testing steps will make your code changes easier to verify for reviewers of all skill levels and familiarity. It's important to remember testing steps serve as documentation for what you **did** and **did not** test for. This can be helpful for highlighting edge-cases you didn't consider.
 
-_I try to write testing steps while verifying the PR right before I set to "ready for review". Also, I like to include additional resources such as a test branch, images, videos, and gifs as needed._
+> _I try to write testing steps while verifying the PR right before I set to "ready for review". Also, I like to include additional resources such as a test branch, images, videos, and gifs as needed._
 
 ### Screen Captures and Supporting Visuals
 
 Include visual elements such as screen captures, gifs, and sometimes videos with a short description. Sharing these resources helps the visual aspect and makes it more obvious the reviewer should expect to see.
 
-_I frequently share before and after screen captures with a brief description when possible. This helps breakup large amounts of content too!_
+> _I frequently share before and after screen captures with a brief description when possible. This helps breakup large amounts of content too!_
 
 ### Visual hierarchy
 
 Using appropriate headings, dividers, and other content components to reduce reader fatigue.
 
-_I typically go for better skim-ability. The more obvious the structure, the quicker the reviewer can locate what they need to reference while testing._
+> _I typically go for better skim-ability. The more obvious the structure, the quicker the reviewer can locate what they need to reference while testing._
 
 ### Small Commits
 
@@ -70,13 +72,13 @@ Utilizing small commits with meaningful descriptions can be incredibly helpful f
 - Small commits make the history easy to alter with `rebase` or `cherry-picking`
 - Detailed commit descriptions serve as resource for explaining code complex choice in the PR as well as commit history
 
-_I recommend writing full commits using `git commit` instead of the message inline `git commit -m "message"`. To make this easier, you can [write your commit message using your code editor of choice](https://salferrarello.com/git-commit-message-editor/) and use [git preview changes in commit message](https://salferrarello.com/git-preview-changes-in-commit-message/). These two features combined will aid greatly in writing clean and focused commits!._
+> _I recommend writing full commits using `git commit` instead of the message inline `git commit -m "message"`. To make this easier, you can [write your commit message using your code editor of choice](https://salferrarello.com/git-commit-message-editor/) and use [git preview changes in commit message](https://salferrarello.com/git-preview-changes-in-commit-message/). These two features combined will aid greatly in writing clean and focused commits!._
 
 ### Make sure your PR is focused
 
 The smaller a PR is, the easier it will be for a reviewer to stay focused. Consider the amount of thought needed for 1 line change PR and a 50+ file PR. Which one are you more likely to review immediately? Which one are you less likely overlook an unwanted code change or bug? Keeping a PR streamlined only to specific goals is an art form which will play a huge role in keeping reviewers focused. If there are features that can be broken out into smaller PRs, the time saved reviewing can be worth it.
 
-_I prefer to break up large PRs by using a primary feature branch and then merging much smaller PRs into it. Once all of the pieces have been merged, the overall approval is much easier since we trust the code up to this point. Previous PRs are also great resources for documenting the changes on the large PR._
+> _I prefer to break up large PRs by using a primary feature branch and then merging much smaller PRs into it. Once all of the pieces have been merged, the overall approval is much easier since we trust the code up to this point. Previous PRs are also great resources for documenting the changes on the large PR._
 
 ### Don't forget the little things
 
