@@ -26,7 +26,7 @@ export default function TextLink({children, to, activeClassName, partiallyActive
   }
 }
 
-Link.propTypes = {
+TextLink.propTypes = {
   children: PropTypes.node.isRequired,
   partiallyActive: PropTypes.bool,
   to: PropTypes.string.isRequired,
