@@ -32,6 +32,10 @@ function SEO({description, lang, meta, keywords, title}) {
                 content: metaDescription,
               },
               {
+                name: 'og:image',
+                content: Avatar
+              },
+              {
                 property: 'og:type',
                 content: 'website',
               },
