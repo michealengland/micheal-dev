@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
+import Avatar from '@content/assets/me-avatar.jpg'
 
 function SEO({description, lang, meta, keywords, title}) {
   return (
@@ -50,6 +51,10 @@ function SEO({description, lang, meta, keywords, title}) {
                 name: 'twitter:description',
                 content: metaDescription,
               },
+              {
+                name: 'twitter:image',
+                content: Avatar
+              }
             ]
               .concat(
                 keywords.length > 0
