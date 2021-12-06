@@ -12,6 +12,10 @@
     content: '';
   }
 
+  & .avatar {
+    @apply w-32 h-32 md:w-40 md:h-40 lg:w-60 lg:h-60 rounded-full mx-auto mb-6;
+  }
+
   & .title {
     @apply text-5xl md:text-6xl lg:text-7xl font-semibold;
   }
