@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
-import Avatar from '@content/assets/me-avatar.jpg'
+import BannerImage from '@content/assets/mle-social-cover-1-91-ratio.jpeg'
 
 function SEO({description, lang, meta, keywords, title}) {
   return (
@@ -33,7 +33,7 @@ function SEO({description, lang, meta, keywords, title}) {
               },
               {
                 name: 'og:image',
-                content: Avatar
+                content: BannerImage,
               },
               {
                 property: 'og:type',
@@ -57,8 +57,8 @@ function SEO({description, lang, meta, keywords, title}) {
               },
               {
                 name: 'twitter:image',
-                content: Avatar
-              }
+                content: BannerImage,
+              },
             ]
               .concat(
                 keywords.length > 0
