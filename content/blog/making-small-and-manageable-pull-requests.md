@@ -4,7 +4,7 @@ date: 2022-07-13T12:00:90Z
 description: Thoughts and career goals for 2021
 ---
 
-In a previous article, I shared some thoughts about on [Writing Better Pull Requests](https://micheal.dev/blog/writing-better-pull-requests). Continuing on that topic, I want share some ideas on how to handle PRs that are difficult, complex, or too large to easily review. In my experience, these types of PRs can be bottlenecks in the development process and can introduce unwanted side-effects.
+In a previous article, I shared some thoughts about [Writing Better Pull Requests](https://micheal.dev/blog/writing-better-pull-requests). Continuing on that topic, I want share some ideas on how to handle PRs that are difficult, complex, or too large to easily review. In my experience, these types of PRs can be bottlenecks in the development process that can introduce unwanted side-effects.
 
 > "I've never seen a PR that was too small but I've seen many that were too large."
 >
