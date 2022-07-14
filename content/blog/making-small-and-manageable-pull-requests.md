@@ -10,7 +10,7 @@ In a previous article, I shared some thoughts about [Writing Better Pull Request
 >
 > [Sal Ferrarello](https://twitter.com/salcode)
 
-It's important to mention that not all large PRs are bad nor are all of them good. So what makes a PR large? Is it too many changes or files changed? Too much documentation? Here are a few characteristics that I've noticed:
+It's important to mention that not all large PRs are bad nor are all of them good. So what makes a PR too large? Is it too many changes or files changed? Too much documentation? Here are a few characteristics that I've noticed:
 
 - The PR is difficult to review for team members and QA. This could be because it has too many changes that appear complex when looking at it.
 - Large PRs tend to take longer to create, review, and get merged.
@@ -48,10 +48,10 @@ The next time you're working on a PR and you say "I can just quickly fix this on
 
 ### 4. The point of no return
 
-Sometimes, it's unavoidable that we create a huge PR and only realize afterwards that we've created a Frankenstein. Don't feel bad, these moments help us learn and grow as developers so that we do not repeat the mistake. Since the work is already done our goal changes to mitigating the difficulty for potential reviewers. Here are a few steps I like to use:
+Sometimes, it's unavoidable that we create a huge PR and only realize afterwards that we've created Frankenstein’s monster. Don't feel bad, these moments help us learn and grow as developers so that we do not repeat the mistake. Since the work is already done our goal changes to mitigating the difficulty for potential reviewers. Here are a few steps I like to use:
 
 - If needed, assuming we wrote small and meaningful commits, we could still split the PR into smaller pieces. This will require some git skills such as `git rebase` and `git cherry-pick`.
-- Offering to do a call with reviewers will go a long way! This will give you a chance to explain and discuss choices while also covering each area of code or atleast the important areas.
+- Offering to do a call with reviewers will go a long way! This will give you a chance to explain and discuss choices while also covering each area of code or at least the important areas.
 - Sometimes it's better to power through and count this as a lesson learned for future PRs.
 
 ## Getting your team onboard with making smaller, focused PRs
