@@ -41,7 +41,7 @@ _Note: This process works best if you use the same reviewers throughout the proc
 
 While working, it's very easy to add minor improvements that are nice to have but fall outside of the requirements of the original ticket. When you encounter this behavior, you should stop and open a new ticket in the backlog.
 
-> Earlier in my career, I struggled with this concept. Oftentimes, I felt that for a feature to be "ready for review", it must have all of the necessary parts fully worked out and 100% complete. Unfortunately,That mindset resulted in huge PRs that were difficult to review and behind schedule.
+> Earlier in my career, I struggled with this concept. Oftentimes, I felt that for a feature to be "ready for review", it must have all of the necessary parts fully worked out and 100% complete. Unfortunately, that mindset resulted in huge PRs that were difficult to review and behind schedule.
 
 The next time you're working on a PR and you say "I can just quickly fix this one thing", please stop yourself and take 2-5 minutes to write a quick ticket description. This will allow you to address the issue later and keep your PR focused.
 
