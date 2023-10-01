@@ -1,3 +1,4 @@
+'use client'
 import * as React from 'react'
 import Layout from '@components/organisms/Layout'
 import Hero from '@components/molecules/Hero'
