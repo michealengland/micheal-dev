@@ -8,12 +8,37 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      container: {
+        center: true,
+        // margin: 'auto'
       },
-    },
+      fontFamily: {
+        sans: ['Mulish, sans-serif'],
+        mono: ['Fira Code, monospace']
+      },
+      colors: {
+        primary: {
+          purple: '#639',
+          purple1: '#020041',
+          purple2: '#170387'
+        },
+        secondary: {
+          pink: '#ff1ee5'
+        },
+        tertiary: {
+          teal: '#74edf1'
+        },
+        nuetral: {
+          white: '#fff',
+          dark: '#333'
+        }
+      },
+      zIndex: {
+        behind: '-1',
+        0: '0',
+        1: '1'
+      }
+    }
   },
   plugins: [],
 }
