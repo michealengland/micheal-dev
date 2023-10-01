@@ -4,19 +4,26 @@ import Hero from '@components/molecules/Hero'
 import Content from '@components/molecules/Content'
 import MediaContent from '@components/molecules/MediaContent'
 import ContentCTA from '@components/molecules/ContentCTA'
-import SEO from '@components/atoms/SEO'
+// import SEO from '@components/atoms/SEO'
+import HeroBackgroundImage from '@static/images/adrien-converse-REL986jyuX4-unsplash.jpg'
+import ContentImage1 from '@static/images/anas-alshanti-feXpdV001o4-unsplash.jpg'
+import ContentImage2 from '@static/images/harpal-singh-_zKxPsGOGKg-unsplash.jpg'
+import ContentImage3 from '@static/images/github-contributions-edited.jpg'
+import ContentImage4 from '@static/images/adrien-converse-kCrrUx7US04-unsplash.jpg'
 
 export default function TestPage() {
   return (
     <Layout>
+      {/*
+      TODO Fix this component.
       <SEO
         title="Mike England"
         description="I'm a JavaScript Developer at Kinsta, and I'm passionate about building cool things using JavaScript."
-      />
+      /> */}
       <Hero
         title="I'm Mike England"
         content="JavaScript Developer / Motorcycle Enthusiast"
-        img="/images/adrien-converse-REL986jyuX4-unsplash.jpg"
+        img={HeroBackgroundImage.src}
       />
       <Content
         title="About Me"
@@ -25,7 +32,7 @@ export default function TestPage() {
       />
       <MediaContent
         imgClipRight={true}
-        img="/images/anas-alshanti-feXpdV001o4-unsplash.jpg"
+        img={ContentImage1.src}
         title="Code Skills"
         content={`
         <p>Here are some of the areas I'm focused on currently:</p>
@@ -43,13 +50,13 @@ export default function TestPage() {
         `}
       />
       <MediaContent
-        img="/images/harpal-singh-_zKxPsGOGKg-unsplash.jpg"
+        img={ContentImage2.src}
         title="Design Background"
         content="<p>Like many front-enders I started out as a designer, creating everything from branding projects to website concepts. To this day, I apply many designer disciplines into creating, building, and testing applications.</p>"
       />
       <MediaContent
         imgClipRight={true}
-        img="/images/github-contributions-edited.jpg"
+        img={ContentImage3.src}
         title="#100DaysOfCode"
         content="<p>Whether you're a seasoned engineer or new to development, #100DaysOfCode is a fun and exciting way to level up. Currently, I'm on my second round, and I'm focused on making React applications, unit testing with Jest, and diving deeper in advanced JavaScript techniques.</p>"
       />
@@ -61,7 +68,7 @@ export default function TestPage() {
       />
       <ContentCTA
         content="Follow me on Twitter! I enjoy sharing code tips and projects that I'm working on."
-        img="./images/adrien-converse-kCrrUx7US04-unsplash.jpg"
+        img={ContentImage4.src}
         label="@mikelikethebike"
         title="Let's Connect"
         url="https://twitter.com/mikelikethebike"
