@@ -6,7 +6,7 @@ import createMarkup from '@utilities/createMarkup'
 import cn from 'classnames'
 import Button from '@components/atoms/Button'
 
-export default function ContentCTA({content, img, label, title, titleTag, url}) {
+export default function ContentCTA({content, img, label, title, titleTag='h2', url}) {
   const hasImgClass = !! img ? styles.hasImg : ''
   const backgroundImage = img && {backgroundImage: `url(${img})`}
 
@@ -33,8 +33,4 @@ ContentCTA.propTypes = {
   title: PropTypes.string,
   titleTag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
   url: PropTypes.string,
-}
-
-ContentCTA.defaultProps = {
-  titleTag: 'h2'
 }

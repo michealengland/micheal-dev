@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Button from '@components/atoms/Button'
 import styles from './Error404.module.css'
 
-export default function Error404({content, img, label, title, to}) {
+export default function Error404({content, img, label, title, to='/'}) {
   const backgroundImage = img && {backgroundImage: `url(${img})`}
 
   return (
@@ -22,8 +22,4 @@ Error404.propTypes = {
   label: PropTypes.string,
   title: PropTypes.string.isRequired,
   to: PropTypes.string,
-}
-
-Error404.defaultProps = {
-  to: '/'
 }

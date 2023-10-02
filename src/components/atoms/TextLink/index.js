@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import Link from 'next/link'
 import PropTypes from 'prop-types'
 
 export default function TextLink({children, to, activeClassName, partiallyActive, ...other}) {
@@ -9,9 +9,10 @@ export default function TextLink({children, to, activeClassName, partiallyActive
   if (internal) {
     return (
       <Link
-        activeClassName={activeClassName}
-        partiallyActive={partiallyActive}
-        to={to}
+        // TODO FIX props on this.
+        // activeClassName={activeClassName}
+        // partiallyActive={partiallyActive}
+        href={to}
         {...other}
       >
         {children}

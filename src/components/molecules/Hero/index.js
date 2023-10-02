@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './Hero.module.css'
 import Avatar from '@content/assets/mle-12-05-21-512x512.jpeg'
+import Image from 'next/image'
 
 export default function Hero({title, content, img}) {
   const backgroundImage = img && {backgroundImage: `url(${img})`}
@@ -9,7 +10,7 @@ export default function Hero({title, content, img}) {
   return (
     <section className={styles.hero} style={backgroundImage}>
       <div>
-        <img
+        <Image
           alt="Micheal England"
           className={styles.avatar}
           height={512}
@@ -25,6 +26,6 @@ export default function Hero({title, content, img}) {
 
 Hero.propTypes = {
   content: PropTypes.string,
-  img: PropTypes.string,
+  img: PropTypes.any,
   title: PropTypes.string,
 }

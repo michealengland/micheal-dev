@@ -4,7 +4,7 @@ import createMarkup from '@utilities/createMarkup'
 import Heading from '@components/atoms/Heading'
 import styles from './Content.module.css'
 
-export default function Content({content, title, titleTag}) {
+export default function Content({content, title, titleTag='h2'}) {
   return (
     <section className={styles.content}>
       {title && <Heading className={styles.contentHeading} tag={titleTag}>{title}</Heading>}
@@ -17,8 +17,4 @@ Content.propTypes = {
   content: PropTypes.string,
   title: PropTypes.string,
   titleTag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
-}
-
-Content.defaultProps = {
-  titleTag: 'h2'
 }
