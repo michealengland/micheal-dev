@@ -5,7 +5,14 @@ import createMarkup from '@utilities/createMarkup'
 import styles from './MediaContent.module.css'
 import cn from 'classnames'
 
-export default function MediaContent({content, img, imgAlt, imgClipRight, title, titleTag}) {
+export default function MediaContent({
+  content,
+  img,
+  imgAlt='',
+  imgClipRight=false,
+  title,
+  titleTag='h2'
+}) {
   const imageClipClass = imgClipRight ? styles.clipRight : styles.clipLeft
 
   return (
@@ -32,10 +39,4 @@ MediaContent.propTypes = {
   imgClipRight: PropTypes.bool,
   title: PropTypes.string,
   titleTag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
-}
-
-MediaContent.defaultProps = {
-  imgAlt: '',
-  imgClipRight: false,
-  titleTag: 'h2'
 }

@@ -4,7 +4,7 @@ import Github from './svgs/github.svg'
 import Twitter from './svgs/twitter.svg'
 import Linkedin from './svgs/linkedin.svg'
 
-export default function Icon({ariaHidden, className, icon}) {
+export default function Icon({ariaHidden=true, className, icon}) {
   let element = null
 
   switch (icon) {
@@ -33,8 +33,4 @@ Icon.propTypes = {
   ariaHidden: PropTypes.bool,
   className: PropTypes.string,
   icon: PropTypes.oneOf(['github', 'linkedin', 'twitter']),
-}
-
-Icon.defaultProps = {
-  ariaHidden: true,
 }

@@ -2,7 +2,7 @@ import createMarkup from '@utilities/createMarkup'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-export default function Heading({children, className, id, tag}) {
+export default function Heading({children, className, id, tag='h1'}) {
   if (typeof children === 'string') {
     return React.createElement(tag, {
       className,
@@ -26,8 +26,4 @@ Heading.propTypes = {
   className: PropTypes.string,
   id: PropTypes.string,
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
-}
-
-Heading.defaultProps = {
-  tag: 'h1'
 }
