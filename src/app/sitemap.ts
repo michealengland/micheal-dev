@@ -1,11 +1,11 @@
 import { MetadataRoute } from 'next'
 import { allPosts } from 'contentlayer/generated'
 
-const DOMAIN = 'https://micheal.dev'
+const BASE_URL = process.env.SITE_URL
 
 function generateSitemapItem(data) {
     return {
-        url: DOMAIN + data.url,
+        url: BASE_URL + data.url,
         lastModified: new Date(),
         priority: 1,
     }
@@ -28,16 +28,15 @@ function getSiteMapItems(items) {
 // ]
 export default function sitemap(): MetadataRoute.Sitemap {
     const sitemapItems = getSiteMapItems(allPosts)
-    console.log('MLE', sitemapItems)
 
     return [
         {
-            url: `${DOMAIN}/`,
+            url: `${BASE_URL}/`,
             lastModified: new Date(),
             priority: 1,
         },
         {
-            url: `${DOMAIN}/blog}`,
+            url: `${BASE_URL}/blog}`,
             lastModified: new Date(),
             priority: 1,
         },
