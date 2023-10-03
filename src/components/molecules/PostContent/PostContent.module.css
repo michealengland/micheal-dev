@@ -67,7 +67,7 @@
   }
 
   & pre {
-    @apply text-lg mb-4 rounded-sm py-4 font-mono;
+    @apply text-lg mb-4 rounded-sm py-4 px-4 font-mono overflow-y-scroll;
   }
 
   & blockquote {
