@@ -8,7 +8,10 @@ import Posts from '@components/molecules/Posts'
 import { allPosts } from 'contentlayer/generated'
 
 export default function Blog() {
-  const posts = allPosts
+  // Sort by descending order.
+  allPosts.sort((a, b) => {
+    return new Date(b.date) - new Date(a.date)
+  })
 
   return (
     <Layout>
@@ -18,7 +21,7 @@ export default function Blog() {
       /> */}
       <section>
         <PostHeader title="Blog" />
-        <Posts posts={posts} />
+        <Posts posts={allPosts} />
       </section>
     </Layout>
   )
