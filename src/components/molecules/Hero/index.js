@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './Hero.module.css'
-import Avatar from '@content/assets/mle-12-05-21-512x512.jpeg'
+import Avatar from '@content/assets/mike-in-prague-2-500x500.jpg'
 import Image from 'next/image'
 
 export default function Hero({title, content, img}) {
