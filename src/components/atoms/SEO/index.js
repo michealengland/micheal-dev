@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
-import BannerImage from '@images/mle-social-cover-1-91-ratio.jpeg'
+import BannerImage from '@assets/mle-social-cover-1-91-ratio.jpeg'
 
 function SEO({
   description,

@@ -30,8 +30,8 @@
       "@utilities/*": [
         "./src/utilities/*"
       ],
-      "@images/*": [
-        "./images/*"
+      "@assets/*": [
+        "./assets/*"
       ],
       "contentlayer/generated": [
         "./.contentlayer/generated"

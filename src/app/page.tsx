@@ -6,11 +6,11 @@ import Content from '@components/molecules/Content'
 import MediaContent from '@components/molecules/MediaContent'
 import ContentCTA from '@components/molecules/ContentCTA'
 // import SEO from '@components/atoms/SEO'
-import HeroBackgroundImage from '@images/adrien-converse-REL986jyuX4-unsplash.jpg'
-import ContentImage1 from '@images/anas-alshanti-feXpdV001o4-unsplash.jpg'
-import ContentImage2 from '@images/harpal-singh-_zKxPsGOGKg-unsplash.jpg'
-import ContentImage3 from '@images/github-contributions-edited.jpg'
-import ContentImage4 from '@images/adrien-converse-kCrrUx7US04-unsplash.jpg'
+import HeroBackgroundImage from '@assets/adrien-converse-REL986jyuX4-unsplash.jpg'
+import ContentImage1 from '@assets/anas-alshanti-feXpdV001o4-unsplash.jpg'
+import ContentImage2 from '@assets/harpal-singh-_zKxPsGOGKg-unsplash.jpg'
+import ContentImage3 from '@assets/github-contributions-edited.jpg'
+import ContentImage4 from '@assets/adrien-converse-kCrrUx7US04-unsplash.jpg'
 
 export default function TestPage() {
   return (

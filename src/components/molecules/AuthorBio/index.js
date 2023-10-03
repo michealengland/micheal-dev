@@ -1,6 +1,6 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
-import Avatar from '@images/mle-12-05-21-512x512.jpeg'
+import Avatar from '@assets/mle-12-05-21-512x512.jpeg'
 import styles from './AuthorBio.module.css'
 
 export default function AuthorBio() {
