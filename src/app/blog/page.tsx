@@ -3,12 +3,12 @@ import React from 'react'
 // import SEO from '@components/atoms/SEO'
 import Layout from '@components/organisms/Layout'
 import PropTypes from 'prop-types'
-// import {graphql} from 'gatsby'
 import PostHeader from '@components/molecules/PostHeader'
 import Posts from '@components/molecules/Posts'
-export default function Blog({data}) {
-//   const posts = data?.allMdx?.nodes
-const posts = []
+import { allPosts } from 'contentlayer/generated'
+
+export default function Blog() {
+  const posts = allPosts
 
   return (
     <Layout>
@@ -29,19 +29,3 @@ Blog.propTypes = {
     allMdx: PropTypes.object
   })
 }
-
-// export const pageQuery = graphql`
-//   query BlogQuery {
-//     allMdx(sort: {fields: [frontmatter___date], order: DESC}) {
-//       totalCount
-//       nodes {
-//         excerpt
-//         frontmatter {
-//           title
-//           date
-//         }
-//         slug
-//       }
-//     }
-//   }
-// `

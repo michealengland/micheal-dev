@@ -14,19 +14,17 @@ export default function Posts({posts}) {
       <div className={styles.inner}>
         {!! posts?.length > 0 && posts.map((post, index) => {
           const {
+            date,
             excerpt,
-            frontmatter:{
-              date,
-              title
-            },
-            slug
+            url,
+            title
           } = post
 
           return (
             <article className={styles.post} key={index}>
-              { slug && title &&
+              { url && title &&
                 <Heading className={styles.title} tag="h2">
-                  <TextLink to={`${slug}`}>
+                  <TextLink to={`${url}`}>
                     {title}
                   </TextLink>
                 </Heading>
