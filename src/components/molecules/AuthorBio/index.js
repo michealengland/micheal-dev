@@ -1,36 +1,14 @@
 import React from 'react'
-import {StaticQuery, graphql} from 'gatsby'
-import Avatar from '@assets/mle-12-05-21-512x512.jpeg'
+import Avatar from '@assets/mike-in-prague-2-500x500.jpg'
 import styles from './AuthorBio.module.css'
 
 export default function AuthorBio() {
   return (
-    <StaticQuery
-      query={authorQuery}
-      render={(data) => {
-        const {author} = data.site.siteMetadata
-        return (
-          <div className={styles.authorBio}>
-            <img className={styles.avatar} src={Avatar} alt="Micheal England" />
-            <p className={styles.content}>
-              Article by <strong>{author}</strong>.
-            </p>
-          </div>
-        )
-      }}
-    />
+    <div className={styles.authorBio}>
+      <img className={styles.avatar} src={Avatar.src} alt="Micheal England" />
+      <p className={styles.content}>
+        Article by <strong>Micheal England</strong>.
+      </p>
+    </div>
   )
 }
-
-const authorQuery = graphql`
-  query AuthorQuery {
-    site {
-      siteMetadata {
-        author
-        social {
-          twitter
-        }
-      }
-    }
-  }
-`
