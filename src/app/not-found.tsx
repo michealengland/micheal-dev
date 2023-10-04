@@ -1,8 +1,6 @@
-'use client'
-import * as React from 'react'
 import Layout from '@components/organisms/Layout'
 import Error404 from '@components/organisms/Error404'
-import MissingImage from '@static/images/adrien-converse-REL986jyuX4-unsplash.jpg'
+import MissingImage from '@assets/adrien-converse-REL986jyuX4-unsplash.jpg'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -10,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Sorry, this content is no longer available or doesn\'t exist.',
 }
 
-const NotFoundPage = () => {
+const NotFound = () => {
   return (
     <Layout>
       <Error404
@@ -23,4 +21,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default NotFound
