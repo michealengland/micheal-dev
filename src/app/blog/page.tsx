@@ -1,15 +1,16 @@
+'use client'
 import React from 'react'
 import Layout from '@components/organisms/Layout'
 import PropTypes from 'prop-types'
 import PostHeader from '@components/molecules/PostHeader'
 import Posts from '@components/molecules/Posts'
 import {IsoDateTimeString, allPosts} from 'contentlayer/generated'
-import {Metadata} from 'next'
+// import {Metadata} from 'next'
 
-export const metadata: Metadata = {
-  title: 'Blog',
-  description: 'Checkout of a few of the JavaScript, Git, and other dev related topics that I\'ve written on my career path.',
-}
+// export const metadata: Metadata = {
+//   title: 'Blog',
+//   description: 'Checkout of a few of the JavaScript, Git, and other dev related topics that I\'ve written on my career path.',
+// }
 
 function sortPostsDescending(a: IsoDateTimeString, b:IsoDateTimeString) {
   return new Date(b).valueOf() - new Date(a).valueOf()
