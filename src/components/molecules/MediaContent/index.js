@@ -4,6 +4,7 @@ import Heading from '@components/atoms/Heading'
 import createMarkup from '@utilities/createMarkup'
 import styles from './MediaContent.module.css'
 import cn from 'classnames'
+import Image from 'next/image'
 
 export default function MediaContent({
   content,
@@ -25,7 +26,7 @@ export default function MediaContent({
       }
       {img &&
         <figure className={cn(styles.media, imageClipClass)}>
-          <img src={img} alt={imgAlt} />
+          <Image src={img} alt={imgAlt} width={1080} height={720} />
         </figure>
       }
     </section>
