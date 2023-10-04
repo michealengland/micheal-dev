@@ -1,11 +1,14 @@
-'use client'
-import React from 'react'
-// import SEO from '@components/atoms/SEO'
 import Layout from '@components/organisms/Layout'
 import PropTypes from 'prop-types'
 import PostHeader from '@components/molecules/PostHeader'
 import Posts from '@components/molecules/Posts'
 import { allPosts } from 'contentlayer/generated'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Checkout of a few of the JavaScript, Git, and other dev related topics that I\'ve written on my career path.',
+}
 
 export default function Blog() {
   // Sort by descending order.
@@ -15,10 +18,6 @@ export default function Blog() {
 
   return (
     <Layout>
-      {/* <SEO
-        title="Blog | Mike England"
-        description="Learn about JavaScript, React, and other platforms that I've used to build awesome projects with."
-      /> */}
       <section>
         <PostHeader title="Blog" />
         <Posts posts={allPosts} />

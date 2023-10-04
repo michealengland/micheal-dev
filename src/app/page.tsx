@@ -1,11 +1,9 @@
-'use client'
 import * as React from 'react'
 import Layout from '@components/organisms/Layout'
 import Hero from '@components/molecules/Hero'
 import Content from '@components/molecules/Content'
 import MediaContent from '@components/molecules/MediaContent'
 import ContentCTA from '@components/molecules/ContentCTA'
-// import SEO from '@components/atoms/SEO'
 import HeroBackgroundImage from '@assets/adrien-converse-REL986jyuX4-unsplash.jpg'
 import ContentImage1 from '@assets/anas-alshanti-feXpdV001o4-unsplash.jpg'
 import ContentImage2 from '@assets/harpal-singh-_zKxPsGOGKg-unsplash.jpg'
@@ -15,12 +13,6 @@ import ContentImage4 from '@assets/adrien-converse-kCrrUx7US04-unsplash.jpg'
 export default function TestPage() {
   return (
     <Layout>
-      {/*
-      TODO Fix this component.
-      <SEO
-        title="Mike England"
-        description="I'm a JavaScript Developer at Kinsta, and I'm passionate about building cool things using JavaScript."
-      /> */}
       <Hero
         title="I'm Mike England"
         content="JavaScript Developer / Motorcycle Enthusiast"

@@ -1,6 +1,5 @@
-// import AuthorBio from '@components/molecules/AuthorBio'
+import AuthorBio from '@components/molecules/AuthorBio'
 import Layout from '@components/organisms/Layout'
-// import SEO from '@components/atoms/SEO'
 import PostContent from '@components/molecules/PostContent'
 import PostHeader from '@components/molecules/PostHeader'
 // import PostNavigation from '@components/molecules/PostNavigation'
@@ -12,7 +11,10 @@ export const generateStaticParams = async () => allPosts.map((post) => ({ slug: 
 
 export const generateMetadata = ({ params }) => {
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
-  return { title: post?.title }
+  return {
+    title: post?.title,
+    description: post?.description
+   }
 }
 
 const PostLayout = ({ params }: { params: { slug: string } }) => {
@@ -27,7 +29,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
             />
             <PostContent>
                 <Content />
-                {/* <AuthorBio /> */}
+                <AuthorBio />
             </PostContent>
             {/* <PostNavigation
                 nextLabel={next?.frontmatter?.title}
