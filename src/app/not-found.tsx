@@ -1,7 +1,8 @@
+import React from 'react'
 import Layout from '@components/organisms/Layout'
 import Error404 from '@components/organisms/Error404'
 import MissingImage from '@assets/adrien-converse-REL986jyuX4-unsplash.jpg'
-import { Metadata } from 'next'
+import {Metadata} from 'next'
 
 export const metadata: Metadata = {
   title: '404 Content Missing',

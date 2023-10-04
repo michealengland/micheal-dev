@@ -1,9 +1,10 @@
+import React from 'react'
 import Layout from '@components/organisms/Layout'
 import PropTypes from 'prop-types'
 import PostHeader from '@components/molecules/PostHeader'
 import Posts from '@components/molecules/Posts'
-import { IsoDateTimeString, allPosts } from 'contentlayer/generated'
-import { Metadata } from 'next'
+import {IsoDateTimeString, allPosts} from 'contentlayer/generated'
+import {Metadata} from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog',

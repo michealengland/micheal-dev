@@ -12,7 +12,7 @@ export default function AuthorBio() {
         alt="Micheal England"
         width={100}
         height={100}
-        />
+      />
       <p className={styles.content}>
         Article by <strong>Micheal England</strong>.
       </p>
