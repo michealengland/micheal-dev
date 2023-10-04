@@ -3,7 +3,7 @@ import { allPosts } from 'contentlayer/generated'
 
 const BASE_URL = process.env.SITE_URL
 
-function generateSitemapItem(data) {
+function generateSitemapItem(data:any) {
     return {
         url: BASE_URL + data.url,
         lastModified: new Date(),
@@ -11,8 +11,8 @@ function generateSitemapItem(data) {
     }
 }
 
-function getSiteMapItems(items) {
-    return items.map((item) => {
+function getSiteMapItems(items:any) {
+    return items.map((item:any) => {
         return generateSitemapItem(item)
     })
 }

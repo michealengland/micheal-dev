@@ -9,7 +9,7 @@ import { getMDXComponent } from 'next-contentlayer/hooks'
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
-export const generateMetadata = ({ params }) => {
+export const generateMetadata = ({ params }:any) => {
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
   return {
     title: post?.title,
@@ -18,7 +18,14 @@ export const generateMetadata = ({ params }) => {
 }
 
 const PostLayout = ({ params }: { params: { slug: string } }) => {
-  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
+  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug) ||
+  {
+    title: '',
+    date: '',
+    body: {
+      code: ''
+    }
+  }
   const Content = getMDXComponent(post.body.code)
 
   return (
