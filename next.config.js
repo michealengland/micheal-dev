@@ -37,6 +37,7 @@ const nextConfig = {
 
 		return config
 	  },
+	  target: 'serverless', // EXPERIMENTAL FOR NETLIFY BUILD
 }
 
 module.exports = withContentlayer(nextConfig)
