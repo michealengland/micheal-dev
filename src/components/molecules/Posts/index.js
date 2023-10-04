@@ -15,9 +15,9 @@ export default function Posts({posts}) {
         {!! posts?.length > 0 && posts.map((post, index) => {
           const {
             date,
-            excerpt,
+            description,
+            title,
             url,
-            title
           } = post
 
           return (
@@ -30,7 +30,7 @@ export default function Posts({posts}) {
                 </Heading>
               }
               {date && <small className={styles.date}>{formatBlogDate(date)}</small>}
-              {excerpt && <p className={styles.content}>{excerpt}</p>}
+              {description && <p className={styles.content}>{description}</p>}
             </article>
           )
         })}
