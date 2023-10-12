@@ -8,15 +8,15 @@ import formatBlogDate from '@utilities/formatBlogDate'
 import {allPosts} from 'contentlayer/generated'
 import {getMDXComponent} from 'next-contentlayer/hooks'
 
-export const generateStaticParams = async () => allPosts.map((post) => ({slug: post._raw.flattenedPath}))
+// export const generateStaticParams = async () => allPosts.map((post) => ({slug: post._raw.flattenedPath}))
 
-export const generateMetadata = ({params}:any) => {
-  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
-  return {
-    title: post?.title,
-    description: post?.description
-  }
-}
+// export const generateMetadata = ({params}:any) => {
+//   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
+//   return {
+//     title: post?.title,
+//     description: post?.description
+//   }
+// }
 
 const PostLayout = ({params}: { params: { slug: string } }) => {
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug) ||
