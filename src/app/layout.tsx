@@ -9,6 +9,8 @@ import {Inter} from 'next/font/google'
 
 const inter = Inter({subsets: ['latin']})
 
+const BASE_URL = new URL(String(process.env.SITE_URL))
+
 export const metadata: Metadata = {
   title: {
     template: '%s | Micheal England',
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
   },
   description: 'I\'m a Development Team Lead at Kinsta, and I\'m passionate about building cool things using JavaScript.',
   themeColor: 'purple',
+  metadataBase: BASE_URL,
   twitter: {
     card: 'summary_large_image',
     title: 'micheal.dev',
