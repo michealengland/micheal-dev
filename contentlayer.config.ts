@@ -3,7 +3,7 @@ import rehypePrettyCode from 'rehype-pretty-code'
 
 const Post = defineDocumentType(() => ({
   name: 'Post',
-  filePathPattern: `**/*.mdx`,
+  filePathPattern: '**/*.mdx',
   contentType: 'mdx',
   fields: {
     title: {
@@ -30,6 +30,13 @@ const Post = defineDocumentType(() => ({
   },
 }))
 
+const Static = defineDocumentType(() => ({
+  name: 'Static',
+  // filePathPattern: 'content/**/*.mdx',
+  filePathPattern: 'static/*.mdx',
+  contentType: 'mdx',
+}))
+
 // Rehype plugin options.
 const options = {
   theme: 'dracula',
@@ -37,11 +44,11 @@ const options = {
     block: 'plaintext',
     inline: 'plaintext',
   },
-};
+}
 
 export default makeSource({
-  contentDirPath: 'posts',
-  documentTypes: [Post],
+  contentDirPath: 'content',
+  documentTypes: [Post, Static],
   mdx: {
     rehypePlugins: [
       [rehypePrettyCode, options]
