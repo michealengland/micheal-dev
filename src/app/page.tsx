@@ -28,7 +28,7 @@ export default function TestPage() {
         img={ContentImage1.src}
         title="Career Skills"
         content={`
-        <p>In April of 2022, I transitioned to a development team lead role which shifted my focus away from React, JavaScript, Node, and Jest. Don't worry, I still love doing personal projects and helping out! Now, I'm more focused on leading and managing a team.</p>
+        <p>In April 2022, I transitioned to a development team lead role, which shifted my focus away from React, JavaScript, Node, and Jest. Don't worry; I still love working on personal projects and helping out! Now, I'm primarily focused on leading and managing a team.</p>
         <ul>
           <li>Performance Reviews & 1:1s</li>
           <li>Mentoring</li>
@@ -41,16 +41,16 @@ export default function TestPage() {
       <MediaContent
         img={ContentImage2.src}
         title="Design Background"
-        content="<p>I believe it's important to remember where you started and my journey started out designer. I spent years in the field creating everything from branding projects to website concepts. To this day, I apply many designer disciplines into creating, building, and testing applications.</p>"
+        content="<p>I believe it's important to remember where you started, and my journey began as a designer. I spent years in the field, creating everything from branding projects to website concepts. To this day, I apply many design disciplines to create, build, and test applications.</p>"
       />
       <MediaContent
         imgClipRight={true}
         img={ContentImage3.src}
         title="Arduino & Drifting"
-        content="<p>In my free time, I try to combine my love of tech and drifting to do some fun projects on my 350z!</p>"
+        content="<p>In my free time, I like to combine my passion for technology with my love for drifting by working on fun projects with my 350z!</p>"
       />
       <ContentCTA
-        content={'I enjoy solving challenges and creating products with code. In fact, this entire website along with many of my other personal projects are on GitHub.'}
+        content={'I enjoy solving challenges and creating products with code. In fact, you can find this entire website, along with many of my other personal projects, on my GitHub profile.'}
         label="View My GitHub Profile"
         title="Checkout some of my work"
         url="https://github.com/michealengland?tab=repositories"
