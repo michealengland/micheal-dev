@@ -36,8 +36,8 @@ const PostLayout = ({params}: { params: { slug: string } }) => {
         content={formatBlogDate(post.date)}
       />
       <PostContent>
-        <Content />
-        {/* <AuthorBio /> */}
+        {/* <Content /> */}
+        <AuthorBio />
       </PostContent>
       {/* <PostNavigation
                 nextLabel={next?.frontmatter?.title}
