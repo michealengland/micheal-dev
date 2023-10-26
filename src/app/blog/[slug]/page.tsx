@@ -29,34 +29,23 @@ const PostLayout = ({params}: { params: { slug: string } }) => {
   }
   const Content = getMDXComponent(post.body.code)
 
-  // return (
-  //   <Layout>
-  //     <PostHeader
-  //       title={post.title}
-  //       content={formatBlogDate(post.date)}
-  //     />
-  //     <PostContent>
-  //       <Content />
-  //       <AuthorBio />
-  //     </PostContent>
-  //     {/* <PostNavigation
-  //               nextLabel={next?.frontmatter?.title}
-  //               nextTo={next?.fields?.slug && `/blog${next?.fields?.slug}`}
-  //               prevLabel={previous?.frontmatter?.title}
-  //               prevTo={previous?.fields?.slug && `/blog${previous?.fields?.slug}`}
-  //           /> */}
-  //   </Layout>
-  // )
-
   return (
-    <>
+    <Layout>
       <PostHeader
         title={post.title}
         content={formatBlogDate(post.date)}
       />
-      <Content />
-      {/* <AuthorBio /> */}
-    </>
+      <PostContent>
+        <Content />
+        {/* <AuthorBio /> */}
+      </PostContent>
+      {/* <PostNavigation
+                nextLabel={next?.frontmatter?.title}
+                nextTo={next?.fields?.slug && `/blog${next?.fields?.slug}`}
+                prevLabel={previous?.frontmatter?.title}
+                prevTo={previous?.fields?.slug && `/blog${previous?.fields?.slug}`}
+            /> */}
+    </Layout>
   )
 }
 
