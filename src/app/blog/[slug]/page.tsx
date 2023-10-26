@@ -37,8 +37,7 @@ const PostLayout = ({params}: { params: { slug: string } }) => {
       />
       <PostContent>
         <Content />
-        <h1>test</h1>
-        {/* <AuthorBio /> */}
+        <AuthorBio />
       </PostContent>
       {/* <PostNavigation
                 nextLabel={next?.frontmatter?.title}

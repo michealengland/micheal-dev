@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Avatar from '@assets/mike-in-prague-2-500x500.jpg'
 import styles from './AuthorBio.module.css'
