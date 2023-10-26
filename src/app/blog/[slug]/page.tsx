@@ -55,7 +55,7 @@ const PostLayout = ({params}: { params: { slug: string } }) => {
         content={formatBlogDate(post.date)}
       />
       <Content />
-      <AuthorBio />
+      {/* <AuthorBio /> */}
     </>
   )
 }
