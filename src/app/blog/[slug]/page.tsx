@@ -30,14 +30,14 @@ const PostLayout = ({params}: { params: { slug: string } }) => {
   const Content = getMDXComponent(post.body.code)
 
   return (
-    <>
+    <Layout>
       <PostHeader
         title={post.title}
         content={formatBlogDate(post.date)}
       />
       <PostContent>
         <Content />
-        <AuthorBio />
+        {/* <AuthorBio /> */}
       </PostContent>
       {/* <PostNavigation
                 nextLabel={next?.frontmatter?.title}
@@ -45,7 +45,7 @@ const PostLayout = ({params}: { params: { slug: string } }) => {
                 prevLabel={previous?.frontmatter?.title}
                 prevTo={previous?.fields?.slug && `/blog${previous?.fields?.slug}`}
             /> */}
-    </>
+    </Layout>
   )
 }
 
