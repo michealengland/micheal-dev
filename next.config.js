@@ -4,10 +4,7 @@ const { withContentlayer } = require("next-contentlayer");
 const nextConfig = {
 	output: 'export',
 	distDir: 'dist',
-	exportTrailingSlash: true,
-	experimental: {
-		appDir: true,
-	},
+	trailingSlash: true,
 	images: {
 		dangerouslyAllowSVG: true,
 		contentDispositionType: 'attachment',
