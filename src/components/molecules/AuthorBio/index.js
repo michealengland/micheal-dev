@@ -9,7 +9,7 @@ export default function AuthorBio() {
     <div className={styles.authorBio}>
       <Image
         className={styles.avatar}
-        src={Avatar.src}
+        src={Avatar?.src} // Testing to see if this fixes an issue.
         alt="Micheal England"
         width={100}
         height={100}
