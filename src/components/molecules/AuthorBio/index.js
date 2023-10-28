@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Avatar from '@assets/mike-in-prague-2-500x500.jpg'
+// import Avatar from '@assets/mike-in-prague-2-500x500.jpg'
 import styles from './AuthorBio.module.css'
 // import Image from 'next/image'
 
@@ -9,7 +9,8 @@ export default function AuthorBio() {
     <div className={styles.authorBio}>
       <img
         className={styles.avatar}
-        src={Avatar.src}
+        // src={Avatar.src}
+        src={''}
         alt="Micheal England"
         width={100}
         height={100}
