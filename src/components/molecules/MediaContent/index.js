@@ -4,8 +4,16 @@ import Heading from '@components/atoms/Heading'
 import createMarkup from '@utilities/createMarkup'
 import styles from './MediaContent.module.css'
 import cn from 'classnames'
+import Image from 'next/image'
 
-export default function MediaContent({content, img, imgAlt, imgClipRight, title, titleTag}) {
+export default function MediaContent({
+  content,
+  img,
+  imgAlt='',
+  imgClipRight=false,
+  title,
+  titleTag='h2'
+}) {
   const imageClipClass = imgClipRight ? styles.clipRight : styles.clipLeft
 
   return (
@@ -18,7 +26,7 @@ export default function MediaContent({content, img, imgAlt, imgClipRight, title,
       }
       {img &&
         <figure className={cn(styles.media, imageClipClass)}>
-          <img src={img} alt={imgAlt} />
+          <Image src={img} alt={imgAlt} width={1080} height={720} />
         </figure>
       }
     </section>
@@ -32,10 +40,4 @@ MediaContent.propTypes = {
   imgClipRight: PropTypes.bool,
   title: PropTypes.string,
   titleTag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
-}
-
-MediaContent.defaultProps = {
-  imgAlt: '',
-  imgClipRight: false,
-  titleTag: 'h2'
 }

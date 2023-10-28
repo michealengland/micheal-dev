@@ -1,3 +1,4 @@
+'use client'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './Layout.module.css'

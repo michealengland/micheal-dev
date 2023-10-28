@@ -15,7 +15,7 @@ export default function PostHeader({content, title}) {
 }
 
 PostHeader.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   content: PropTypes.string,
 }
 
