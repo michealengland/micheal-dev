@@ -11,7 +11,7 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="Mike England"
-        description="I'm a JavaScript Developer at Kinsta, and I'm passionate about building cool things using JavaScript."
+        description="I'm a Development Team Lead at Kinsta, and I'm passionate about building cool things using JavaScript."
       />
       <Hero
         title="Hi! I'm Mike England"
@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Content
         title="About Me"
         titleTag="h2"
-        content={'Currently, I\'m a manage a team of software developers that is focused on developing and maintaining the application and database services at <a href="https://kinsta.com/">Kinsta</a>.'}
+        content={'Currently, I manage a team of software developers that is focused on developing and maintaining the application and database services at <a href="https://kinsta.com/">Kinsta</a>.'}
       />
       <MediaContent
         imgClipRight={true}
