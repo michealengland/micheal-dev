@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './Hero.module.css'
-import Avatar from '@content/assets/mike-in-prague-500x500.jpg'
+import Avatar from '@content/assets/mike-in-car-2.jpg'
 
 export default function Hero({title, content, img}) {
   const backgroundImage = img && {backgroundImage: `url(${img})`}

@@ -5,7 +5,7 @@ import Content from '@components/molecules/Content'
 import MediaContent from '@components/molecules/MediaContent'
 import ContentCTA from '@components/molecules/ContentCTA'
 import SEO from '@components/atoms/SEO'
-//img="./images/adrien-converse-kCrrUx7US04-unsplash.jpg"
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -14,27 +14,29 @@ const IndexPage = () => {
         description="I'm a JavaScript Developer at Kinsta, and I'm passionate about building cool things using JavaScript."
       />
       <Hero
-        title="Mike England"
-        content="Development Team Lead @Kinsta"
-        img="/images/prague-cityscape-2000x1000.jpg"
+        title="Hi! I'm Mike England"
+        content="I love to laugh at my own jokes, drift cars, and build projects with React & JavaScript."
+        img="/images/halloween-jam-drift-350z-2000x1000.jpeg"
       />
       <Content
         title="About Me"
         titleTag="h2"
-        content={'I\'m a Development Team Lead at <a href="https://kinsta.com/">Kinsta</a> and I\'m passionate about building awesome products, tools, and web applications.'}
+        content={'Currently, I\'m a manage a team of software developers that is focused on developing and maintaining the application and database services at <a href="https://kinsta.com/">Kinsta</a>.'}
       />
       <MediaContent
         imgClipRight={true}
         img="/images/anas-alshanti-feXpdV001o4-unsplash.jpg"
         title="Career Skills"
         content={`
-        <p>In April 2022, I transitioned to a development team lead role, which shifted my focus away from React, JavaScript, Node, and Jest. Don't worry; I still love working on personal projects and helping out! Now, I'm primarily focused on leading and managing a team.</p>
+        <p>In April 2022, I was promoted to a Development Team Lead position, which shifted my focus away from coding on a regular basis. Don't worry; I still love working on personal projects and helping out! Here are some of my current skills:</p>
         <ul>
-          <li>Performance Reviews & 1:1s</li>
-          <li>Mentoring</li>
-          <li>Product Ownership</li>
+          <li>Performance Reviews</li>
+          <li>Coaching & Mentoring</li>
           <li>Team Management & Growth</li>
-          <li>Coordinatin
+          <li>NodeJS</li>
+          <li>JavaScript / TypeScript</li>
+          <li>React</li>
+          <li>Gutenberg</li>
         </ul>
         `}
       />
@@ -47,7 +49,7 @@ const IndexPage = () => {
         imgClipRight={true}
         img="/images/350zduino-1080x720.jpg"
         title="Arduino & Drifting"
-        content="<p>In my free time, I like to combine my passion for technology with my love for drifting by working on fun projects with my 350z!</p>"
+        content={'<p>In my free time, I like to find ways to combine my passion for technology with my love for drifting cars. In one of my recent projects, I made an OBDII reader that connects to my <a href="https://github.com/michealengland/350z-drift-elmduino">Nissan 350z using an ESP32 microcontroller and bluetooth</a>.</p>'}
       />
       <ContentCTA
         content="I enjoy solving challenges and creating products with code. In fact, you can find this entire website, along with many of my other personal projects, on my GitHub profile."
