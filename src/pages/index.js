@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Content
         title="About Me"
         titleTag="h2"
-        content={'Currently, I manage a team of software developers that is focused on developing and maintaining the application and database services at <a href="https://kinsta.com/">Kinsta</a>.'}
+        content={'Currently, I manage a software development team that is focused on developing and maintaining the application and database services at <a href="https://kinsta.com/">Kinsta</a>.'}
       />
       <MediaContent
         imgClipRight={true}
