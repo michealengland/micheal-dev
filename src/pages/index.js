@@ -6,6 +6,7 @@ import MediaContent from '@components/molecules/MediaContent'
 import ContentCTA from '@components/molecules/ContentCTA'
 import SEO from '@components/atoms/SEO'
 
+
 const IndexPage = () => {
   return (
     <Layout>
